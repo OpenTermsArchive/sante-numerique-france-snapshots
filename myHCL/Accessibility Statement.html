@@ -1,0 +1,523 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html  xml:lang="fr-FR" lang="fr-FR" xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head"><meta content="width=device-width, initial-scale=1, maximum-scale=1" name="VIEWPORT" /><meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<meta name="REVISIT-AFTER" content="1 DAYS" />
+<meta name="RATING" content="GENERAL" />
+<meta name="RESOURCE-TYPE" content="DOCUMENT" />
+<meta content="text/javascript" http-equiv="Content-Script-Type" />
+<meta content="text/css" http-equiv="Content-Style-Type" />
+<title>
+	Déclaration d'accessibilité
+</title><meta id="MetaDescription" name="description" content="Portail Internet proposé par les Hospices Civils de Lyon offrant des démarches administratives (rendez-vous, pré-admissions, factures) et un espace de suivi en ligne." /><meta id="MetaKeywords" name="keywords" content="HCL,myHCL,viaPatient,Hospices Civils de Lyon, Hôpital lyon,portail,patient,santé,médecine,CHU de Lyon,Centre Hospitalier Universitaire,hopitaux,maternité,rendez-vous,RDV,admission,démarches" /><meta id="MetaRobots" name="robots" content="INDEX, FOLLOW" /><link href="/Portals/_default/Skins/ViaPatientResponsive/bootstrap/css/bootstrap.css?cdv=1490" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/ViaPatientResponsive/botchat.css?cdv=1490" type="text/css" rel="stylesheet"/><link href="/Portals/0/css/jquery.qtip.css?cdv=1490" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/ViaPatientResponsive/css/myHOP.css?cdv=1490" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/ViaPatientResponsive/css/HCL.css?cdv=1490" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/ViaPatientResponsive/fontawesome/css/all.min.css?cdv=1490" type="text/css" rel="stylesheet"/><link href="/Resources/Shared/stylesheets/dnndefault/7.0.0/default.css?cdv=1490" type="text/css" rel="stylesheet"/><link href="/DesktopModules/HTML/module.css?cdv=1490" type="text/css" rel="stylesheet"/><link href="/Portals/_default/skins/viapatientresponsive/skin.css?cdv=1490" type="text/css" rel="stylesheet"/><link href="/Portals/_default/skins/viapatientresponsive/index.css?cdv=1490" type="text/css" rel="stylesheet"/><link href="/Portals/0/portal.css?cdv=1490" type="text/css" rel="stylesheet"/><script src="/Resources/libraries/jQuery/03_05_01/jquery.js?cdv=1490" type="text/javascript"></script><script src="/Resources/libraries/jQuery-UI/01_12_01/jquery-ui.js?cdv=1490" type="text/javascript"></script><!--[if LT IE 8]><link id="IE7Minus" rel="stylesheet" type="text/css" href="/Portals/_default/skins/viapatientresponsive/css/ie7skin.css" /><![endif]--><link rel='SHORTCUT ICON' href='/Portals/0/favicon.ico?ver=aa2p3V5hUz2Ltu5yDlU63w%3d%3d' type='image/x-icon' />     
+        
+			           
+		  <link href="/WebResource.axd?d=QKX1AO1vX8fKfYf4sOemC0AT5sHQ8MKkJI5fGlfguX4KnsylGzcVFTIwFnQan0Y-JAf9VfOSTeM1h5AAVDEpAoxtPtu2FA_bfoNv7Q2&amp;t=638218057613823912" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/WebResource.axd?d=abSXP-RgNuAmmpLvhg5gcMbs2TkkIMoG90a0n0mVkWkox54UBdTGvHnHhxo0gvtS_XxphSALs2xlT_sGQV4S4ps21dj5Ud52EKqcGlXKbqNa4iPYzhY0lV93di81&amp;t=638218057613823912" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /></head>
+<body id="Body">
+
+    <form name="Form" method="post" action="/EspacePublic/Accessibilite.aspx" id="Form" enctype="multipart/form-data">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="B1wTAjCRc7bmZxLwGTvvDncNLdyUfEw3Re1M0OuPqpTOSEWFU1a0JeHOzDuqt6Dfiqi1EYVTyNeROyf3ng8Z1NH9KoxSfVz23KZ3M0XGi6NgCf1dFOF5SATxT1r49gkB5090zl91GSgbOlxcnZgYseZ9xnutbZwgc+oxmtVv/QBm6WWaENzRCjspTxcrh+wSuh1g4jBsBUYZfZdZoDFQoBVlMboYNS4lOh7a5AonULRMzhvUq5dNGhHh8eXedG9SZeorZ6P4Mmk/q2RE+JmLPcYh0puxskHObRw1ZX5DicEjhruGI4MUpTYvTpRJp78AgqNciJR+tNOri32PwNtrzYlzNVAlrrdjASAhV46Y9Zvqib/X/pol7AUUUomlQZYI5eT093HDIAm5v+63Mvy0Bc7G8w7psBXNu588f0JGixn2kVd6wInLIvAO9W/8J6tp2HlTdL1hhcj2FGzGk41/Qx8t59/2axLadwmtKS06WE0vZ13s2ABXUWNNvwEp57iVJSph0pLMLwsde+E/LSKbUjyGHp9MaqO8lxuBDxMEuVVLSN2k0aHAZtpA5iDqxSBmowqaSituUkZ0vA+174O3g9U8vJCHw7UUv3ZotoRj3RtlrS501aEdXrm86O4TUoB5eoPGSuL4YnVP2V9Jxc5M3gfZUVfDUTUSxAAbeoMX52Yf9qVudPlMhVKYZKlyWPSqNYBDqZfQgZPDclrRwIVrrQ1iVF59X9Tw7+oAHhGAxJqAAgOtm4noHHl4Y591yybwKTsf8a/9T4UrU54aRo7AY6fq959WQRKHAffwp8gRfU0bN1dpRS829oYWFrC5b0oGUscjD6t6oa5KiC04wIqd+KEpKuBKeMaDF6NEEv3Qd57OguzuIrHVPDip5DMqZqqRSTlhqdKFJmK5SRBO9TkJP1JErFKe1pcjlHOi6M6IaZ45b0of4KAGK9e4K31DJEkysFgd0KimqHp4ggTbuFXyXGmqH0313ouoDDFzT1hXtZtnm4lZD9PAGh1T/KZWL1U9udEtrpaMC4bxNaBa8YTM95h6+YikwvJqSfoZkGSXHA5nKxBfMkdI0UoBdPXEOOV+4xfaN3x2cKbhoj2jvLj9QAuhfkwDkT2LNSs3Lt4XgPxAB2ZAH4bx0MN1jBfXpCk35Hch3Clu0s7SVO3CR3IxcndgFoNry0yYgYRsACuHltDim34JpA103Qvhao2+waoHvMjC4pV7k13BiCbOXZnXIEVLkgiNYMWyhRTDqNo4fT0Kc4P6hCdxBUsxdTUubaXY/UTzdIucCKnMsRWp2otGuHzURk0JokMs07ypuxBQqHWsiMz4Dn1t/QbovwCorTfzwHWs8o4UP3YLulosRF8DDqDC6vbWXu8gGS7DrKh3irvu/bd88zX7N9ZkP4rXr/1zaC8JEGhBxMjple2dINRcSK+p4S+A9XWa+x7682I0gSVlbmu5YzshPRKQOjMwKf8FRkelPsguTmdAlszZceijfkLx5A4R2zQWpGvMLi7yYsVGqidTwTOsw/I3hJSDc5TDAvn7yC65AQooDApUoEj7HmKRmXn+C7u9r6BAS/m6xaq9n9UigZCwx+5xXUX+nBcglm3zzn36gicVqi/QcOfhbZq7bDw=" />
+
+
+<script src="/Portals/0/Personnalisation/Scripts/scriptSuivi.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var __cultureInfo = {"name":"fr-FR","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":",","IsReadOnly":false,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":" ","CurrencySymbol":"€","NaNSymbol":"NaN","CurrencyNegativePattern":8,"NumberNegativePattern":1,"PercentPositivePattern":0,"PercentNegativePattern":0,"NegativeInfinitySymbol":"-∞","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":",","NumberGroupSeparator":" ","CurrencyPositivePattern":3,"PositiveInfinitySymbol":"∞","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":",","PercentGroupSeparator":" ","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"","Calendar":{"MinSupportedDateTime":"\/Date(-62135596800000)\/","MaxSupportedDateTime":"\/Date(253402297199999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":false},"DateSeparator":"/","FirstDayOfWeek":1,"CalendarWeekRule":2,"FullDateTimePattern":"dddd d MMMM yyyy HH:mm:ss","LongDatePattern":"dddd d MMMM yyyy","LongTimePattern":"HH:mm:ss","MonthDayPattern":"d MMMM","PMDesignator":"","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"dd/MM/yyyy","ShortTimePattern":"HH:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM yyyy","AbbreviatedDayNames":["dim.","lun.","mar.","mer.","jeu.","ven.","sam."],"ShortestDayNames":["di","lu","ma","me","je","ve","sa"],"DayNames":["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"],"AbbreviatedMonthNames":["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc.",""],"MonthNames":["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre",""],"IsReadOnly":false,"NativeCalendarName":"calendrier grégorien","AbbreviatedMonthGenitiveNames":["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc.",""],"MonthGenitiveNames":["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre",""]},"eras":[1,"ap. J.-C.",null,0]};//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=dyDTs7gNF_mTp0Kpj6zvm_pmFroc4YzLjDdmAtcvC38zxTY9KPUY5WXsUIHIG5NMHhycPvidNAdWbmK_WvZJXkAHltkNm_hDvyj_OfCQbHxNJ7qSIEmVgd1eret-E1dFYtTl7w2&amp;t=2a9d95e3" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=ct1HG-wRSUJyfoTvJ3FE96duQEMD7uJb-mhHB_Ww2VmbF84YsV5Nk_JcYhu0cw6ie97t19JhcEO_uw0PD5QYuqmPP0n-JrdHSaSy8t_ZpeU9Vam07bGVnYBzsAbiB6fng-CMgcwfsIs2TVML0&amp;t=2a9d95e3" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=TDVjdgRbdvM1HeiBowreVR3oDOPH_YCE1ju8ocY1NcPSCEduYA6oQEFsyQeqMkzY9IV2K68XbynI0FcUwiJaEwzRqh9fvrlzjJjbNw2&amp;t=5a82d106" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=sF8Y0c2qLAcJXKaQujFozWPhK9tshwvRL4oPiYtiacsenoCfZ1Cauy7CjqT6K3mAKMsxXy5Zi1mILfs1gDVKnG1wLhV6xeQXgXV0OA2&amp;t=5a82d106" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=mbGZm65DzNBtidnzsIXEl5Ab3qda8H6zAxPoHZ7yXZM4C_G_8WKso9PolRWMz9rHp064lqjkZtFDoudtXdgXXTIKlzgZwuQdqaiOqShbJfRsAN360&amp;t=5a82d106" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=cmIcXiVJ__c3y7q7xef-E5M7wM_jbaSPRwzPSgK9yK_PjXs7MjMTtQx221902AGX7D11wzpV_GNJDmZ8zvIGNcg29J91RzMAnDqfhgl2cc1LkYI30&amp;t=5a82d106" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=mxxObI9nroQod_avSDJm2gxobpZyjgsVQdXu8v0KB3bhdnFSxB1zKQiHxFNzdQFIW91q41Hol5A53Ma_96r_MAEaIBsQJJcitM25zb_gf4TFCuSqjzIDgkcfj6ftc9iUacR03A2&amp;t=5a82d106" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=ei_BvuPu_kcNJvlFHh9hKKtcF6-fj2vqFDWmK6Kvz47L1OMVRWUhL1GnhkjQvI6VUnvtw0neSPEXv74nKjuy9L_RIUkGjsi3eYHwh7Su91xoZIIz3EwOHJmGfJ81&amp;t=5a82d106" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=qsRpKh5Y3Y2WURhulCBxBtF6sYGZdsds8BljkCOIIJjVpr_u3tqfz6y3TlVvxd_IHiEYb4dBGWpkIoNsrcIuIm2GYGvOcx8Vpttofuv61fsDXWrmK1L3oJdm9PQ1&amp;t=5a82d106" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=aoSSiMnLNTA3Ga4wW5KItaYoMnUCMQtenFQNNlGeESUS1uGT4lBJGJp2UocBhUonyJT-Ye8GW1DPgr6Ow0kx2hp4VcZzKgik8rz7URoQB_Ta5QhmCju7q2tEQUlRxQ3o-Pr-61OWTmmQzi_C0&amp;t=5a82d106" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=GUyLPMOEFhd_bC-LOSziffDhQ3-LWXiDjzCdwYRYoaxcgBGiappgmKlWC6Q5ub1K0Ct-pZL59a1klvg7kZIO6vpczgARUt-b5Vn7a6Qqisrs9rYFMPM5-X5Jr1hpP6_ITono-A2&amp;t=5a82d106" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=A22-SyJgKhKv7inthU1chtuYee2U5-q2UbwnzbDeF5N1jAzKZZUDpDfNOmZ3N1IvZBMu_2h82izwdsloZ3f2BlRjOD3xqOu314MviHMc5BLDcBKfzvP-HtMwq5w1&amp;t=5a82d106" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=utaAJrK4Erq19jTcpBZXIEOC_PQnNNcVgRD2nxq0D_zetpUwK2w4DhLrEuloakoPUayiKoq3AyT5xv3T9VKDhfSIjVh1vHMyJPovSEgoRUagTmDbPmslTS46fKU1&amp;t=5a82d106" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=LxjRs3XOu8A0_cAuquvLBZ8DpMmTHtQ1Fxnpdir9fPcd8QFa2riu4Se92-7-P4Zaf9Mdv0xnMPjOUmVRfg5-XXCJ9p2McKNo76TTt23cgn14bKNEDv4mGqHN9RKhjaWalnYFdN4owHTnEbCfMukJh0hTrdM1&amp;t=5a82d106" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=86EhAqQjfuOuOjJrVnnhdhquemfWHS36pjjJEXoaFInZ67nMF3OIY6XmB-NGxOhOohlWBT453_n4_eu4Yx0KDrjBObMcNNMtkijIussDa7md8VnqNoNbqJsssUY_c1lJEnzjhaq__d_JsS7W0&amp;t=5a82d106" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=wl5RKBCXTWBTRiq1-7pJFLK72jpYhfxEnAkFU3CH37K1mtWD6fCmjB8RGF_fpVDMvTRZgurx6bNkXkRITVoSANhkM85GieiLRfEXdELHogTlxHU57-p7_AIJ2uk1&amp;t=5a82d106" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=OhiQVM8i2fej0mgZh8ld4zXQ9C4s9e0qgtLVj5-OOXiAR3LFGBVlYJjXYei6m8YgpZw3dMSK4vNvmvWTZLk8S1XAffmwJ2yWCwmvB1m50xrJ2-DTVtStADfFNu01&amp;t=5a82d106" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="qmZDaFHKxBeh05KTM6JXwedlPrHRqy/YTi72+HW0M52Wwii61CatgvOl/ikdd6TGHDQicr6HED6xvD+t5QQpt8g1115Zv81KsGDlwD1prWC47DHU" /><script src="/js/dnn.modalpopup.js?cdv=1490" type="text/javascript"></script><script src="/js/dnncore.js?cdv=1490" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', ['tdnn$RadAjaxManager0SU','dnn_RadAjaxManager0SU'], [], [], 90, '');
+//]]>
+</script>
+
+        
+        
+        <!--CDF(Css|/Portals/_default/Skins/ViaPatientResponsive/bootstrap/css/bootstrap.css?cdv=1490|DnnPageHeaderProvider|-18)-->
+<!--CDF(Css|/Portals/_default/Skins/ViaPatientResponsive/botchat.css?cdv=1490|DnnPageHeaderProvider|-18)-->
+
+<!--CDF(Css|/Portals/0/css/jquery.qtip.css?cdv=1490|DnnPageHeaderProvider|-18)-->
+
+<!--CDF(Css|/Portals/_default/Skins/ViaPatientResponsive/css/HCL.css?cdv=1490|DnnPageHeaderProvider|-16)-->
+<!--CDF(Css|/Portals/_default/Skins/ViaPatientResponsive/css/myHOP.css?cdv=1490|DnnPageHeaderProvider|-17)-->
+<!--CDF(Css|/Portals/_default/Skins/ViaPatientResponsive/fontawesome/css/all.min.css?cdv=1490|DnnPageHeaderProvider|-16)-->
+
+
+<script type="text/javascript" src="../Portals/0/js/jquery/fisheye.js"></script>
+<script type="text/javascript" src="../Portals/0/js/jquery/jquery.qtip.js"></script>
+<script type="text/javascript" src="../Portals/0/js/jquery/jcarousellite_1.0.1.min.js"></script>
+<script type="text/javascript" src="../Portals/0/js/jquery/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="../Portals/0/js/jquery/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="../Portals/0/js/jquery/jquery.roundabout-1.0.min.js"></script>
+<script type="text/javascript" src="../Portals/0/js/jquery/jquery.getUrlParam.js"></script>
+<script type="text/javascript" src="../Portals/0/js/switchcontent.js"></script>
+<script type="text/javascript" src="../Portals/0/js/jquery/jquery.tools.expose-1.0.5.min.js"></script>
+<script type="text/javascript" src="../Portals/0/js/medipath.js"></script>
+<script type="text/javascript" src="../Portals/_default/skins/viapatientresponsive/js/tableToResponsive.js"></script>
+<script type="text/javascript" src="../Portals/_default/skins/viapatientresponsive/js/popupConfirm.js"></script>
+<script type="text/javascript" src="../Portals/_default/skins/viapatientresponsive/js/popupConfirmFormulaire.js"></script>
+<script type="text/javascript" src="../Portals/_default/skins/viapatientresponsive/js/correctionScrolling.js"></script>
+<script type="text/javascript" src="../Portals/_default/skins/viapatientresponsive/js/menu.js"></script>
+<script type="text/javascript" src="../Portals/_default/skins/viapatientresponsive/js/telerikComponentsResponsive.js"></script>
+<script type="text/javascript" src="../Portals/_default/skins/viapatientresponsive/js/viaPatientBehaviors.js"></script>
+
+
+<style>
+    /* Tooltip */
+    .wc-header + .tooltip > .tooltip-inner {
+        background-color: #73AD21;
+        color: #FFFFFF;
+        border: 1px solid green;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    /* Tooltip on top */
+    .wc-header + .tooltip.top > .tooltip-arrow {
+        border-top: 5px solid green;
+    }
+
+    /* Tooltip on bottom */
+    .wc-header + .tooltip.bottom > .tooltip-arrow {
+        border-bottom: 5px solid blue;
+    }
+
+    /* Tooltip on left */
+    .wc-header + .tooltip.left > .tooltip-arrow {
+        border-left: 5px solid red;
+    }
+
+    /* Tooltip on right */
+    .wc-header + .tooltip.right > .tooltip-arrow {
+        border-right: 5px solid black;
+    }
+
+
+
+    .ui-widget-shadow {
+        background: white !important;
+        border: 1px solid black !important;
+        color: black;
+        padding: 0;
+        margin: 0;
+    }
+
+    .ui-tooltip {
+        opacity: 1;
+    }
+
+    #Body {
+        background-image: url('/Portals/0/Personnalisation/Apparence/Fond.jpg');
+    }
+
+    .header-logo .header-logo-img
+    {
+        background-image: url('/Portals/0/Personnalisation/Apparence/SIHLogo.png');
+    }
+
+</style>
+
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+
+        //masquer le message de Phdcc Module disant que c est la version gratuite
+        jQuery('a[href*="phdcc"]').parent().remove();
+
+        //masquer le message de IndooGrid disant que c est la version d essai
+        jQuery('a[href*="indoolab"]').hide();
+
+        //masquer menu contextuel des patients
+        //jQuery('.portraitMenuDiv').hide();
+
+        // masquer le menu contextuel d'ajout de patient
+        jQuery('.pnlAddPatient').hide();
+        jQuery('.pnlAddPatient').css('zIndex', 9990);
+        //jQuery('.portraitMenuDiv').css('zIndex', 9989);
+        jQuery('.pnlMedipathCardOTP').css('zIndex', 9999);
+        jQuery('.pnlCardMedipathHolder').css('zIndex', 9999);
+        jQuery('div.confirmationMain').css('zIndex', 9999);
+        jQuery('.divContainerNotifier').delay(1000).fadeIn(2000).delay(2000);
+        jQuery('.divContainerNotifier').fadeOut(2000);
+        jQuery("#closeButton").hide();
+
+
+
+
+
+        $("div.wc-header").attr('data-toggle', 'tooltip');
+        $("div.wc-header").attr('title', 'Cliquez pour poser votre question');
+
+
+        $("div.wc-header").attr('onClick', 'CloseChatBot()');
+        $("div.wc-header span").text('Besoin d\'aide ?');
+        $("div.wc-header span").css('position', 'absolute');
+
+
+        $('[data-toggle="tooltip"]').tooltip();
+
+
+        $("button.wc-send").on('click', function (e) {
+            e.stopPropagation();
+        });
+
+        $(window).keydown(function (event) {
+            if (event.keyCode == 13) {
+                event.stopPropagation();
+            }
+        });
+    });
+
+    $('[data-toggle="tooltip"]').focus(function () {
+        var divHeader = $('div.wc-header').attr('aria-describedby');
+
+        $('div.' + divHeader).css('background-color', 'blue');
+    })
+
+
+
+    function CloseChatBot() {
+        var botDiv = $('#bot');
+        var chatDiv = $("div.wc-chatview-panel");
+        var botLeft = $("div.bot_left");
+
+        if (bot.style.height == '38px') {
+            $("div.wc-header").attr('title', 'Cliquez pour fermer ');
+            bot.style.height = '400px';
+            chatDiv.css('height', '400px');
+            $('div[role="tooltip"').css('top', '300px');
+        } else {
+            $("div.wc-header").attr('title', 'Cliquez pour poser votre question');
+
+            bot.style.height = '38px';
+            chatDiv.css('height', '38px');
+        }
+    }
+
+    // Default style for content pane
+    var widthClass = 'content_width';
+
+</script>
+<!-- 2022.3.913.45 --><div id="dnn_RadAjaxManager0SU">
+	<span id="dnn_RadAjaxManager0" style="display:none;"></span>
+</div>
+
+
+
+<div id="s_wrap_main">
+    <div id="s_wrap_sub">
+        <div class="template_style">
+            <div class="cpanel_left">
+                <div class="cpanel_right">
+                    <div id="dnn_ControlPanel">
+                    </div>
+                </div>
+            </div>
+
+            <div class="header">
+                <div class="header-menu menu-container menu-1stSectionOpened">
+                    
+                    
+
+<div class="menu-toggle header-menu-burger">MENU</div>
+<nav class="menu menu-content" style="display: none;">
+        <div class="menu menu-content-wrapper">
+            <div class="menuSection">
+  <div>Espace public</div>
+</div>
+<ul class="menu-list">
+  <li class="menu-list-item "><a class="menu-list-item-link" href="https://myhcl.sante-ra.fr/Login_.aspx" target="">Se connecter / s'inscrire</a></li>
+  <li class="menu-list-item "><a class="menu-list-item-link" href="https://myhcl.sante-ra.fr/Espacepublic/CreerSonCompte.aspx" target="">Créer son compte</a></li>
+  <li class="menu-list-item "><a class="menu-list-item-link" href="https://myhcl.sante-ra.fr/Espacepublic/rendezvous.aspx" target="">Prendre rendez-vous</a></li>
+  <li class="menu-list-item "><a class="menu-list-item-link" href="https://myhcl.sante-ra.fr/Espacepublic/Grossesse.aspx" target="">S'inscrire en maternité</a></li>
+  <li class="menu-list-item "><a class="menu-list-item-link" href="https://myhcl.sante-ra.fr/Espacepublic/DocumentsBDAv.aspx" target="">Admission</a></li>
+  <li class="menu-list-item "><a class="menu-list-item-link" href="https://myhcl.sante-ra.fr/Espacepublic/PayerSaFactureTIPI.aspx" target="">Payer sa facture</a></li>
+  <li class="menu-list-item "><a class="menu-list-item-link" href="https://myhcl.sante-ra.fr/Espacepublic/AnnulerunRDV.aspx" target="">Annuler un rendez-vous</a></li>
+  <li class="menu-list-item "><a class="menu-list-item-link" href="https://myhcl.sante-ra.fr/ParlonsSante.aspx" target="">Parlons santé ! (newsletter)</a></li>
+  <li class="menu-list-item "><a class="menu-list-item-link" href="https://myhcl.sante-ra.fr/Accueil/Documentation.aspx" target="">Documentation</a></li>
+  <li class="menu-list-item "><a class="menu-list-item-link" href="https://myhcl.sante-ra.fr/Accueil/FAQ.aspx" target="">FAQ</a></li>
+  <li class="menu-list-item "><a class="menu-list-item-link" href="https://myhcl.sante-ra.fr/ServicesPlus/Contact.aspx" target="">Contactez-nous</a></li>
+</ul>
+        </div>
+</nav>
+                </div>
+
+                <div class="header-profile menu-container">
+                    
+                </div>
+
+                <a href="../Default.aspx" class="header-logo">
+                    <div class="header-logo-img"></div>
+                    <div class="header-logo-title">
+                        Votre espace patient sécurisé en lien avec les Hospices Civils de Lyon
+                    </div>
+                </a>
+                <div class="header-links menu-container">
+                    
+                </div>
+            </div>
+
+
+            <div class="content_pad">
+
+                
+<script type="text/javascript">
+    (function (global) {
+        var popupMessages = global.popupMessages = {
+            afficherConfirmation: function (source) {
+                popupMessages.afficher("Confirm", message, escape("<button class='common-btn'></button>"), false);
+            },
+            afficher: function (type, texte, complement, autoFermeture, masquerFermeture) {
+                /* Ajout du fond modal*/
+                jQuery('body').prepend('<div class="fd-modal"></div>');
+                jQuery(".popup-container-message-text").html(texte);
+                jQuery(".popup-container-complement-text").html(complement);
+                jQuery(".popup-container-complement").show();
+                jQuery(".popup-container-dismiss").hide();
+                var container = jQuery(".popup-container");
+                container.attr("class", "popup-container");
+                container.addClass(type);
+                container.fadeIn(500);
+                if (autoFermeture) {
+                    container.delay(5000).fadeOut(500);
+                    jQuery(".fd-modal").remove();
+                } else if (!masquerFermeture) {
+                    jQuery(".popup-container-dismiss").show();
+                }
+
+                if (complement == null || complement == "") {
+                    jQuery(".popup-container-complement").hide();
+                }
+            },
+
+            cacher: function () {
+                jQuery(".popup-container").fadeOut(500);
+                jQuery(".fd-modal").remove();
+            }
+        };
+    })(window);
+</script>
+<div id="popupMessage" class="popup-container">
+    <div id="popupMessageFermer" class="popup-container-dismiss">
+        <img src="/portals/0/images/icones/Close_white.png" title="Fermer" onclick="popupMessages.cacher();" />
+    </div>
+    <div id="popupMessagePrincipal" class="popup-container-message">
+        <img class="popup-container-message-illustration" src="/images/1x1.gif" />
+        <span class="popup-container-message-text" />
+    </div>
+    <div id="popupMessageComplement" class="popup-container-complement">
+        <span class="popup-container-complement-text" />
+    </div>
+</div>
+
+
+
+
+
+                <div id="contentWidth" class="content_width">
+                    <script type="text/javascript" language="javascript">
+                        document.getElementById("contentWidth").setAttribute("class", widthClass);
+                        document.getElementById("contentWidth").setAttribute("className", widthClass);
+                    </script>
+
+                    
+
+
+
+                    
+                    <div id="dnn_TopPane" class="TopPane DNNEmptyPane">
+
+
+
+                    </div>
+                    <h1>D&#233;claration d&#39;accessibilit&#233;</h1>
+                    <div id="dnn_ContentPane" valign="top" class="ContentPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-7158"><a name="7158"></a>
+<div class="DNNContainer_noTitle">
+	<div id="dnn_ctr7158_ContentPane"><!-- Start_Module_7158 --><div id="dnn_ctr7158_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr7158_HtmlModule_lblContent" class="Normal">
+	<style>
+    h2 {
+        margin: 20px 0;
+        color: #004C6D;
+    }
+    
+    li {
+        list-style-type: disc !important;
+    }
+</style>
+<p>Les Hospices civils de Lyon s’engagent à rendre ses sites internet et ses progiciels accessibles conformément à l’article 47 de <a href="https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000037388867/" target="_blank"> la loi n°2005-102 du 11 février 2005</a>.</p>
+<p>Cette déclaration d’accessibilité s’applique à :
+    <ul>
+        <li>
+            <a href="https://myhcl.sante-ra.fr/" target="_blank">https://myhcl.sante-ra.fr/</a>
+        </li>
+    </ul>
+    <h2>État de conformité</h2>
+    <p>Le site myHCL est non conforme avec le
+        <a href="https://accessibilite.numerique.gouv.fr/" target="_blank"></a>référentiel général d’amélioration de l’accessibilité (RGAA), version 4 en raison de l’absence d’audit.</p>
+    <p>Cet audit est en préparation pour ce site.</p>
+    <h2>Retour d’information et contact</h2>
+    <p>Pour toute question ou problème dans l'utilisation de ce site web, contactez l'équipe myHCL via <a href="https://myhcl.sante-ra.fr/ServicesPlus/contact.aspx" target="_blank">le formulaire de contact</a> prévu à cet effet. </p>
+    <h2>Voies de recours</h2>
+    <p>Si vous avez signalé un défaut d’accessibilité vous empêchant d’accéder à un contenu du site et que vous n’avez pas eu de réponse satisfaisante de la part des HCL, vous êtes en droit de faire parvenir vos doléances ou une demande de saisine au Défenseur
+        des droits.
+        <br>Consultez les procédures de voies de recours sur le site
+        <a href="https://www.defenseurdesdroits.fr/nous-contacter-355" target="_blank">Défenseur des Droits</a>.
+    </p>
+</div>
+
+</div><!-- End_Module_7158 --></div>
+	<div class="clear"></div>
+</div>
+</div></div>
+                    <div id="dnn_BottomPane" class="BottomPane DNNEmptyPane">
+                    </div>
+                    
+
+<div>
+    <span id="dnn_Cs3User_lblIsUserCS3" class="IsUserCS3" style="display:none"></span>
+    <span id="dnn_Cs3User_lblIsPageCS3" class="IsPageCS3" style="display:none"></span>
+</div>
+
+
+                </div>
+            </div>
+
+            <div class="bot_pad">
+                <div id="terms_style" class="footer">
+                    <a class="footer" href="../Accueil/Documentation.aspx">Documentation</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a class="footer" href="../Accueil/FAQ.aspx">FAQ</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a class="footer" href="../ServicesPlus/contact.aspx">Contactez-nous</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a class="footer" href="../Terms.aspx">Mentions légales</a>
+                </div>
+                <div id="copy_style" class="footer">
+                    <span id="dnn_dnnCOPYRIGHT_lblCopyright" class="footer">Copyright ©<a href='http://www.chu-lyon.fr' target='_blank'>HCL</a> 2023 - Tous droits réservés</span>
+
+                    &nbsp;&nbsp;|&nbsp;&nbsp;<span id="dnn_identifier_LblPlateform"></span>
+<span id="dnn_identifier_LblVersion" style="margin-left:5px;">7.5.0.4</span>
+                </div>
+                <div class="clear_float">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="dnn_windowsManager_RadWindowManager1" style="display:none;">
+	<div id="dnn_windowsManager_RadWindowManager1_alerttemplate" style="display:none;">
+        <div class="rwDialogPopup radalert">
+            <div class="rwDialogText">
+            {1}
+            </div>
+
+            <div>
+                <a  onclick="$find('{0}').close(true);"
+                class="rwPopupButton" href="javascript:void(0);">
+                    <span class="rwOuterSpan">
+                        <span class="rwInnerSpan">##LOC[OK]##</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+        </div><div id="dnn_windowsManager_RadWindowManager1_prompttemplate" style="display:none;">
+         <div class="rwDialogPopup radprompt">
+                <div class="rwDialogText">
+                {1}
+                </div>
+                <div>
+                    <script type="text/javascript">
+                    function RadWindowprompt_detectenter(id, ev, input)
+                    {
+                        if (!ev) ev = window.event;
+                        if (ev.keyCode == 13)
+                        {
+                            var but = input.parentNode.parentNode.getElementsByTagName("A")[0];
+                            if (but)
+                            {
+                                if (but.click) but.click();
+                                else if (but.onclick)
+                                {
+                                    but.focus(); var click = but.onclick; but.onclick = null; if (click) click.call(but);
+                                }
+                            }
+                           return false;
+                        }
+                        else return true;
+                    }
+                    </script>
+                    <input title="Enter Value" onkeydown="return RadWindowprompt_detectenter('{0}', event, this);" type="text"  class="rwDialogInput" value="{2}" />
+                </div>
+                <div>
+                    <a onclick="$find('{0}').close(this.parentNode.parentNode.getElementsByTagName('input')[0].value);"
+                        class="rwPopupButton" href="javascript:void(0);" ><span class="rwOuterSpan"><span class="rwInnerSpan">##LOC[OK]##</span></span></a>
+                    <a onclick="$find('{0}').close(null);" class="rwPopupButton"  href="javascript:void(0);"><span class="rwOuterSpan"><span class="rwInnerSpan">##LOC[Cancel]##</span></span></a>
+                </div>
+            </div>
+        </div><div id="dnn_windowsManager_RadWindowManager1_confirmtemplate" style="display:none;">
+        <div class="rwDialogPopup radconfirm">
+            <div class="rwDialogText">
+            {1}
+            </div>
+            <div>
+                <a onclick="$find('{0}').close(true);"  class="rwPopupButton" href="javascript:void(0);" ><span class="rwOuterSpan"><span class="rwInnerSpan">##LOC[OK]##</span></span></a>
+                <a onclick="$find('{0}').close(false);" class="rwPopupButton"  href="javascript:void(0);"><span class="rwOuterSpan"><span class="rwInnerSpan">##LOC[Cancel]##</span></span></a>
+            </div>
+        </div>
+        </div><input id="dnn_windowsManager_RadWindowManager1_ClientState" name="dnn_windowsManager_RadWindowManager1_ClientState" type="hidden" />
+</div>
+
+
+<div id="dnn_windowsManager_rw" style="display:none;">
+	<div id="dnn_windowsManager_rw_C" style="display:none;">
+		
+        <div style="width: 800px;">
+            
+        </div>
+    
+	</div><input id="dnn_windowsManager_rw_ClientState" name="dnn_windowsManager_rw_ClientState" type="hidden" />
+</div>
+
+
+
+
+
+        <input name="ScrollTop" type="hidden" id="ScrollTop" />
+        <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" />
+        
+    
+
+<script type="text/javascript">
+//<![CDATA[
+setTimeout(function(){confirmations.setup();}, 0);setTimeout(function(){confirmationsFormulaires.setup();}, 0);setTimeout(function(){tableResponsive.setup();}, 0);setTimeout(function(){scrolling.fixMobileScrolling();}, 0);Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxManager, {"_updatePanels":"","ajaxSettings":[],"clientEvents":{OnRequestStart:"viaPatientBehaviors.disableAjaxSource",OnResponseEnd:"viaPatientBehaviors.enableAjaxSource"},"defaultLoadingPanelID":"","enableAJAX":true,"enableHistory":false,"links":[],"styles":[],"uniqueID":"dnn$RadAjaxManager0","updatePanelsRenderMode":0}, null, null, $get("dnn_RadAjaxManager0"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadWindowManager, {"autoSize":true,"behaviors":0,"clientStateFieldID":"dnn_windowsManager_RadWindowManager1_ClientState","destroyOnClose":true,"formID":"Form","iconUrl":"","localization":"{\"Close\":\"Close\",\"Maximize\":\"Maximize\",\"Minimize\":\"Minimize\",\"Reload\":\"Reload\",\"PinOn\":\"Pin on\",\"PinOff\":\"Pin off\",\"Restore\":\"Restore\",\"OK\":\"Oui\",\"Cancel\":\"Non\",\"Yes\":\"Yes\",\"No\":\"No\"}","minimizeIconUrl":"","modal":true,"name":"RadWindowManager1","skin":"Default","visibleStatusbar":false,"visibleTitlebar":false,"windowControls":"[]"}, null, null, $get("dnn_windowsManager_RadWindowManager1"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadWindow, {"_dockMode":true,"autoSize":true,"behaviors":4,"clientStateFieldID":"dnn_windowsManager_rw_ClientState","formID":"Form","iconUrl":"","minimizeIconUrl":"","name":"rw","skin":"Default","visibleStatusbar":false}, null, null, $get("dnn_windowsManager_rw"));
+});
+//]]>
+</script>
+</form>
+    <!--CDF(Javascript|/js/dnncore.js?cdv=1490|DnnBodyProvider|100)--><!--CDF(Javascript|/js/dnn.modalpopup.js?cdv=1490|DnnBodyProvider|50)--><!--CDF(Css|/Resources/Shared/stylesheets/dnndefault/7.0.0/default.css?cdv=1490|DnnPageHeaderProvider|5)--><!--CDF(Css|/Portals/_default/skins/viapatientresponsive/skin.css?cdv=1490|DnnPageHeaderProvider|15)--><!--CDF(Css|/Portals/_default/skins/viapatientresponsive/index.css?cdv=1490|DnnPageHeaderProvider|20)--><!--CDF(Css|/DesktopModules/HTML/module.css?cdv=1490|DnnPageHeaderProvider|10)--><!--CDF(Css|/DesktopModules/HTML/module.css?cdv=1490|DnnPageHeaderProvider|10)--><!--CDF(Css|/Portals/0/portal.css?cdv=1490|DnnPageHeaderProvider|35)--><!--CDF(Javascript|/Resources/libraries/jQuery-UI/01_12_01/jquery-ui.js?cdv=1490|DnnPageHeaderProvider|10)--><!--CDF(Javascript|/Resources/libraries/jQuery/03_05_01/jquery.js?cdv=1490|DnnPageHeaderProvider|5)-->
+    
+</body>
+</html>
