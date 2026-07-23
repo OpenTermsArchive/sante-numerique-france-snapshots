@@ -149,7 +149,7 @@
 			"@theme/popover-polyfill": "//www.withings.com/cdn/shop/t/3/assets/popover-polyfill.js?v=119029313658895111201775221209",
 			"@theme/component-quantity-selector": "//www.withings.com/cdn/shop/t/3/assets/component-quantity-selector.js?v=67906657287482036641775221206",
 			"@theme/comparison-slider": "//www.withings.com/cdn/shop/t/3/assets/comparison-slider.js?v=106705562947035711941775221204",
-			"@theme/sticky-add-to-cart": "//www.withings.com/cdn/shop/t/3/assets/sticky-add-to-cart.js?v=29526761023566384601782742984",
+			"@theme/sticky-add-to-cart": "//www.withings.com/cdn/shop/t/3/assets/sticky-add-to-cart.js?v=67209632464840479941784724949",
 			"@theme/fly-to-cart": "//www.withings.com/cdn/shop/t/3/assets/fly-to-cart.js?v=48483246440248933081775221205",
 			"@theme/band-upsell": "//www.withings.com/cdn/shop/t/3/assets/band-upsell.js?v=164687724004164031801777907777",
 			"@theme/subscription-block": "//www.withings.com/cdn/shop/t/3/assets/subscription-block.js?v=117890255796237664121784215928",
@@ -1730,7 +1730,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
     window.addEventListener('load', asyncLoad, false);
   }
 })();</script>
-<script id="__st">var __st={"a":97801699702,"offset":7200,"reqid":"fe085315-2461-47d6-83d8-6749ecdd8b23-1784723601","pageurl":"www.withings.com\/en-us\/policies\/terms-of-service","u":"79d5ad65eb41"};</script>
+<script id="__st">var __st={"a":97801699702,"offset":7200,"reqid":"a7dbded7-f267-4e28-ab72-3f79b75f25f3-1784765111","pageurl":"www.withings.com\/en-us\/policies\/terms-of-service?version=20221108","u":"0a08f57bf946"};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.2.iife.js',D={infoText:'Protected by hCaptcha',privacyText:'Privacy',termsText:'Terms'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
 <script integrity="sha256-JjoPp5ZfB1sSAs5SQaol1x1GgvveM+BgmRzyDexInEQ=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//www.withings.com/cdn/shopifycloud/storefront/assets/storefront/load_feature-1bd60354.js" crossorigin="anonymous"></script>
@@ -1779,15 +1779,26 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 }
 
       </style>
-<link rel="compression-dictionary" href="//www.withings.com/cdn/shop/t/3/compiled_assets/styles.css?v=55575022198677877481784706883" crossorigin="anonymous">
-<link rel="stylesheet" media="screen" href="//www.withings.com/cdn/shop/t/3/compiled_assets/styles.css?v=55575022198677877481784706883&subset=AAAAAACAAQAAAAAAAAAAABAAAECAAgAAABAAAAAIAAAACQAAYII" crossorigin="anonymous">
+<link rel="compression-dictionary" href="//www.withings.com/cdn/shop/t/3/compiled_assets/styles.css?v=61877976376726150341784738478" crossorigin="anonymous">
+<link rel="stylesheet" media="screen" href="//www.withings.com/cdn/shop/t/3/compiled_assets/styles.css?v=61877976376726150341784738478&subset=AAAAAACAAQAAAAAAAAAAABAAAECAAgAAABAAAAAIAAAACQAAYII" crossorigin="anonymous">
 <script id="shopify-cfh-end">window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
 		
-
 		
 
 		
-	<!-- BEGIN app block: shopify://apps/addingwell/blocks/aw-gtm/c8ed21e7-0ac8-4249-8c91-cbdde850b5b8 --><script
+
+		
+	<!-- BEGIN app block: shopify://apps/hreflang-cleaner/blocks/hreflang/019e4a87-ffcb-7bb9-a414-601895e245c0 -->
+<link rel="alternate" hreflang="en-AU" href="https://withings-admin.myshopify.com/en-au/policies/terms-of-service" /><link rel="alternate" hreflang="de-AT" href="https://withings-admin.myshopify.com/de-at/policies/terms-of-service" /><link rel="alternate" hreflang="de-BE" href="https://withings-admin.myshopify.com/de-be/policies/terms-of-service" /><link rel="alternate" hreflang="fr-BE" href="https://withings-admin.myshopify.com/fr-be/policies/terms-of-service" /><link rel="alternate" hreflang="nl-BE" href="https://withings-admin.myshopify.com/nl-be/policies/terms-of-service" /><link rel="alternate" hreflang="en-CA" href="https://withings-admin.myshopify.com/en-ca/policies/terms-of-service" /><link rel="alternate" hreflang="fr-CA" href="https://withings-admin.myshopify.com/fr-ca/policies/terms-of-service" /><link rel="alternate" hreflang="zh-Hans-CN" href="https://withings-admin.myshopify.com/zh-hans-cn/policies/terms-of-service" /><link rel="alternate" hreflang="zh-Hant-CN" href="https://withings-admin.myshopify.com/zh-hant-cn/policies/terms-of-service" /><link rel="alternate" hreflang="da-DK" href="https://withings-admin.myshopify.com/da-dk/policies/terms-of-service" /><link rel="alternate" hreflang="en" href="https://withings-admin.myshopify.com/en-eu/policies/terms-of-service" /><link rel="alternate" hreflang="fi-FI" href="https://withings-admin.myshopify.com/fi-fi/policies/terms-of-service" /><link rel="alternate" hreflang="fr-FR" href="https://withings-admin.myshopify.com/fr-fr/policies/terms-of-service" /><link rel="alternate" hreflang="de-DE" href="https://withings-admin.myshopify.com/de-de/policies/terms-of-service" /><link rel="alternate" hreflang="en-HK" href="https://withings-admin.myshopify.com/en-hk/policies/terms-of-service" /><link rel="alternate" hreflang="zh-Hant-HK" href="https://withings-admin.myshopify.com/zh-hk/policies/terms-of-service" /><link rel="alternate" hreflang="en-IN" href="https://withings-admin.myshopify.com/en-in/policies/terms-of-service" /><link rel="alternate" hreflang="it-IT" href="https://withings-admin.myshopify.com/it-it/policies/terms-of-service" /><link rel="alternate" hreflang="ja-JP" href="https://withings-admin.myshopify.com/ja-jp/policies/terms-of-service" /><link rel="alternate" hreflang="nl-NL" href="https://withings-admin.myshopify.com/nl-nl/policies/terms-of-service" /><link rel="alternate" hreflang="en-NZ" href="https://withings-admin.myshopify.com/en-nz/policies/terms-of-service" /><link rel="alternate" hreflang="nb-NO" href="https://withings-admin.myshopify.com/no-no/policies/terms-of-service" /><link rel="alternate" hreflang="pt-PT" href="https://withings-admin.myshopify.com/pt-pt/policies/terms-of-service" /><link rel="alternate" hreflang="en-SG" href="https://withings-admin.myshopify.com/en-sg/policies/terms-of-service" /><link rel="alternate" hreflang="es-ES" href="https://withings-admin.myshopify.com/es-es/policies/terms-of-service" /><link rel="alternate" hreflang="sv-SE" href="https://withings-admin.myshopify.com/sv-se/policies/terms-of-service" /><link rel="alternate" hreflang="de-CH" href="https://withings-admin.myshopify.com/de-ch/policies/terms-of-service" /><link rel="alternate" hreflang="fr-CH" href="https://withings-admin.myshopify.com/fr-ch/policies/terms-of-service" /><link rel="alternate" hreflang="it-CH" href="https://withings-admin.myshopify.com/it-ch/policies/terms-of-service" /><link rel="alternate" hreflang="zh-Hant-TW" href="https://withings-admin.myshopify.com/zh-tw/policies/terms-of-service" /><link rel="alternate" hreflang="en-GB" href="https://withings-admin.myshopify.com/en-uk/policies/terms-of-service" /><link rel="alternate" hreflang="en-US" href="https://withings-admin.myshopify.com/en-us/policies/terms-of-service" /><link rel="alternate" hreflang="x-default" href="https://withings-admin.myshopify.com/en-eu/policies/terms-of-service" />
+<!-- END app block --><!-- BEGIN app block: shopify://apps/yotpo-product-reviews/blocks/settings/eb7dfd7d-db44-4334-bc49-c893b51b36cf -->
+
+
+  <script type="text/javascript" src="https://cdn-widgetsrepository.yotpo.com/v1/loader/z85iT6S1dalV1D8RcXXXloEqkhFcuRNynTSLygTL?languageCode=en" async></script>
+
+
+
+  
+<!-- END app block --><!-- BEGIN app block: shopify://apps/addingwell/blocks/aw-gtm/c8ed21e7-0ac8-4249-8c91-cbdde850b5b8 --><script
   type="module"
 >
   setTimeout(async function () {
@@ -2498,16 +2509,6 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 </script>
 
 
-<!-- END app block --><!-- BEGIN app block: shopify://apps/yotpo-product-reviews/blocks/settings/eb7dfd7d-db44-4334-bc49-c893b51b36cf -->
-
-
-  <script type="text/javascript" src="https://cdn-widgetsrepository.yotpo.com/v1/loader/z85iT6S1dalV1D8RcXXXloEqkhFcuRNynTSLygTL?languageCode=en" async></script>
-
-
-
-  
-<!-- END app block --><!-- BEGIN app block: shopify://apps/hreflang-cleaner/blocks/hreflang/019e4a87-ffcb-7bb9-a414-601895e245c0 -->
-<link rel="alternate" hreflang="en-AU" href="https://withings-admin.myshopify.com/en-au/policies/terms-of-service" /><link rel="alternate" hreflang="de-AT" href="https://withings-admin.myshopify.com/de-at/policies/terms-of-service" /><link rel="alternate" hreflang="de-BE" href="https://withings-admin.myshopify.com/de-be/policies/terms-of-service" /><link rel="alternate" hreflang="fr-BE" href="https://withings-admin.myshopify.com/fr-be/policies/terms-of-service" /><link rel="alternate" hreflang="nl-BE" href="https://withings-admin.myshopify.com/nl-be/policies/terms-of-service" /><link rel="alternate" hreflang="en-CA" href="https://withings-admin.myshopify.com/en-ca/policies/terms-of-service" /><link rel="alternate" hreflang="fr-CA" href="https://withings-admin.myshopify.com/fr-ca/policies/terms-of-service" /><link rel="alternate" hreflang="zh-Hans-CN" href="https://withings-admin.myshopify.com/zh-hans-cn/policies/terms-of-service" /><link rel="alternate" hreflang="zh-Hant-CN" href="https://withings-admin.myshopify.com/zh-hant-cn/policies/terms-of-service" /><link rel="alternate" hreflang="da-DK" href="https://withings-admin.myshopify.com/da-dk/policies/terms-of-service" /><link rel="alternate" hreflang="en" href="https://withings-admin.myshopify.com/en-eu/policies/terms-of-service" /><link rel="alternate" hreflang="fi-FI" href="https://withings-admin.myshopify.com/fi-fi/policies/terms-of-service" /><link rel="alternate" hreflang="fr-FR" href="https://withings-admin.myshopify.com/fr-fr/policies/terms-of-service" /><link rel="alternate" hreflang="de-DE" href="https://withings-admin.myshopify.com/de-de/policies/terms-of-service" /><link rel="alternate" hreflang="en-HK" href="https://withings-admin.myshopify.com/en-hk/policies/terms-of-service" /><link rel="alternate" hreflang="zh-Hant-HK" href="https://withings-admin.myshopify.com/zh-hk/policies/terms-of-service" /><link rel="alternate" hreflang="en-IN" href="https://withings-admin.myshopify.com/en-in/policies/terms-of-service" /><link rel="alternate" hreflang="it-IT" href="https://withings-admin.myshopify.com/it-it/policies/terms-of-service" /><link rel="alternate" hreflang="ja-JP" href="https://withings-admin.myshopify.com/ja-jp/policies/terms-of-service" /><link rel="alternate" hreflang="nl-NL" href="https://withings-admin.myshopify.com/nl-nl/policies/terms-of-service" /><link rel="alternate" hreflang="en-NZ" href="https://withings-admin.myshopify.com/en-nz/policies/terms-of-service" /><link rel="alternate" hreflang="nb-NO" href="https://withings-admin.myshopify.com/no-no/policies/terms-of-service" /><link rel="alternate" hreflang="pt-PT" href="https://withings-admin.myshopify.com/pt-pt/policies/terms-of-service" /><link rel="alternate" hreflang="en-SG" href="https://withings-admin.myshopify.com/en-sg/policies/terms-of-service" /><link rel="alternate" hreflang="es-ES" href="https://withings-admin.myshopify.com/es-es/policies/terms-of-service" /><link rel="alternate" hreflang="sv-SE" href="https://withings-admin.myshopify.com/sv-se/policies/terms-of-service" /><link rel="alternate" hreflang="de-CH" href="https://withings-admin.myshopify.com/de-ch/policies/terms-of-service" /><link rel="alternate" hreflang="fr-CH" href="https://withings-admin.myshopify.com/fr-ch/policies/terms-of-service" /><link rel="alternate" hreflang="it-CH" href="https://withings-admin.myshopify.com/it-ch/policies/terms-of-service" /><link rel="alternate" hreflang="zh-Hant-TW" href="https://withings-admin.myshopify.com/zh-tw/policies/terms-of-service" /><link rel="alternate" hreflang="en-GB" href="https://withings-admin.myshopify.com/en-uk/policies/terms-of-service" /><link rel="alternate" hreflang="en-US" href="https://withings-admin.myshopify.com/en-us/policies/terms-of-service" /><link rel="alternate" hreflang="x-default" href="https://withings-admin.myshopify.com/en-eu/policies/terms-of-service" />
 <!-- END app block --><script src="https://cdn.shopify.com/extensions/019f40c1-33e9-7840-a2d1-ec04b091c08e/orbe-geolocation-473/assets/orbe.min.js" type="text/javascript" defer="defer"></script>
 <link href="https://cdn.shopify.com/extensions/019f40c1-33e9-7840-a2d1-ec04b091c08e/orbe-geolocation-473/assets/md-app-modal.min.css" rel="stylesheet" type="text/css" media="all">
 <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
@@ -2519,7 +2520,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   window.ShopifyAnalytics = window.ShopifyAnalytics || {};
   window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
   window.ShopifyAnalytics.meta.currency = 'USD';
-  var meta = {"page":{"requestId":"fe085315-2461-47d6-83d8-6749ecdd8b23-1784723601"}};
+  var meta = {"page":{"requestId":"a7dbded7-f267-4e28-ab72-3f79b75f25f3-1784765111"}};
   for (var attr in meta) {
     window.ShopifyAnalytics.meta[attr] = meta[attr];
   }
@@ -2663,7 +2664,7 @@ first.parentNode.insertBefore(script, first);
 
     };
     trekkie.load(
-      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":97801699702,"isMerchantRequest":null,"themeId":193736868214,"themeCityHash":"10201410488846473718","contentLanguage":"en","currency":"USD","eventMetadataId":"7b8f5d38-4b9c-45fa-9fdf-b225412e3d42"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["b5387b81","d5bdd5d0"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":false,"source":"trekkie-storefront-renderer","apiClientId":580111}}
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":97801699702,"isMerchantRequest":null,"themeId":193736868214,"themeCityHash":"4658591981922465085","contentLanguage":"en","currency":"USD","eventMetadataId":"e7fc9ed5-1c9d-48b6-b891-0c06af33ea6b"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["b5387b81","d5bdd5d0"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":false,"source":"trekkie-storefront-renderer","apiClientId":580111}}
     );
 
     var loaded = false;
@@ -2686,7 +2687,7 @@ first.parentNode.insertBefore(script, first);
       }
     });
 
-    window.ShopifyAnalytics.lib.page(null,{"requestId":"fe085315-2461-47d6-83d8-6749ecdd8b23-1784723601","shopifyEmitted":true});
+    window.ShopifyAnalytics.lib.page(null,{"requestId":"a7dbded7-f267-4e28-ab72-3f79b75f25f3-1784765111","shopifyEmitted":true});
 
     var eventsListenerScript = document.createElement('script');
     eventsListenerScript.async = true;
@@ -6006,41 +6007,7 @@ none;
 
 
 <style>  </style>
-<div id="shopify-block-AVElYbHJnemxjbVVrN__10840395464443086010" class="shopify-block shopify-app-block">
-
-
-<script>
-  console.log("[Alia app extension] v1.0.5");
-
-  const BACKEND_URL = "https://backend.alia-prod.com";
-
-  window.ALIA_SHOPIFY_EXTENSION_INFO = {
-    customerID: "",
-    country: "US",
-    market: "us",
-    language: "en"
-  }
-
-  if (document.readyState !== "loading") {
-    initAlia();
-  } else {
-    document.addEventListener("DOMContentLoaded", () => initAlia(), { once: true });
-  }
-
-  async function initAlia() {
-    if (window.Shopify.designMode) {
-      console.log("[Alia app extension] Not showing in Shopify theme editor");
-      return;
-    }
-    const url = BACKEND_URL + "/public/launcher.js?shop=0e1fdz-w5.myshopify.com";
-    const script = document.createElement("script");
-    script.src = url;
-    script.async = true;
-    document.head.appendChild(script);
-  }
-</script>
-
-</div><div id="shopify-block-AYlZha3Y3M1ZCdHA1e__15912215999290715800" class="shopify-block shopify-app-block">
+<div id="shopify-block-AYlZha3Y3M1ZCdHA1e__15912215999290715800" class="shopify-block shopify-app-block">
 
 <style data-shopify>
     .md-modal__content, .md-btn, .md-modal__formContent__select select, .md-form__select, .md-form__select__country__list-link, .md-form__select__language__list-link, .md-form__select__country__list-link-wrapper span, .md-form__select__language__list-link-wrapper span, .md-modal__bodyContent__text p {
@@ -8367,7 +8334,7 @@ none;
         <div class="md-modal__container">
             <div class="md-modal__dialog" role="dialog" aria-modal="true"
                  aria-labelledby="label-md-modal__dialog" tabindex="-1">
-                <div class="md-modal__content notranslate" data-wg-notranslate><form method="post" action="/en-us/localization" id="md-modal__form__id" accept-charset="UTF-8" class="" enctype="multipart/form-data"><input type="hidden" name="form_type" value="localization" /><input type="hidden" name="utf8" value="✓" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="return_to" value="/en-us/policies/terms-of-service" />
+                <div class="md-modal__content notranslate" data-wg-notranslate><form method="post" action="/en-us/localization" id="md-modal__form__id" accept-charset="UTF-8" class="" enctype="multipart/form-data"><input type="hidden" name="form_type" value="localization" /><input type="hidden" name="utf8" value="✓" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="return_to" value="/en-us/policies/terms-of-service?version=20221108" />
                     <div class="md-modal__grid">
                         <div class="md-modal__grid__1">
                             <div class="md-modal__header__flag">
@@ -9126,6 +9093,40 @@ if (typeof mdApp_countryRules == 'undefined') {var mdApp_countryRules = {
 </script>
 
 
+
+</div><div id="shopify-block-AVElYbHJnemxjbVVrN__10840395464443086010" class="shopify-block shopify-app-block">
+
+
+<script>
+  console.log("[Alia app extension] v1.0.5");
+
+  const BACKEND_URL = "https://backend.alia-prod.com";
+
+  window.ALIA_SHOPIFY_EXTENSION_INFO = {
+    customerID: "",
+    country: "US",
+    market: "us",
+    language: "en"
+  }
+
+  if (document.readyState !== "loading") {
+    initAlia();
+  } else {
+    document.addEventListener("DOMContentLoaded", () => initAlia(), { once: true });
+  }
+
+  async function initAlia() {
+    if (window.Shopify.designMode) {
+      console.log("[Alia app extension] Not showing in Shopify theme editor");
+      return;
+    }
+    const url = BACKEND_URL + "/public/launcher.js?shop=0e1fdz-w5.myshopify.com";
+    const script = document.createElement("script");
+    script.src = url;
+    script.async = true;
+    document.head.appendChild(script);
+  }
+</script>
 
 </div><script src="https://cdn.shopify.com/storefront/standard-actions.js" type="module" data-source-attribution="shopify.standard_actions"></script>
 </body>
