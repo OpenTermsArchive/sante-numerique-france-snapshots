@@ -149,7 +149,7 @@
 			"@theme/popover-polyfill": "//www.withings.com/cdn/shop/t/3/assets/popover-polyfill.js?v=119029313658895111201775221209",
 			"@theme/component-quantity-selector": "//www.withings.com/cdn/shop/t/3/assets/component-quantity-selector.js?v=67906657287482036641775221206",
 			"@theme/comparison-slider": "//www.withings.com/cdn/shop/t/3/assets/comparison-slider.js?v=106705562947035711941775221204",
-			"@theme/sticky-add-to-cart": "//www.withings.com/cdn/shop/t/3/assets/sticky-add-to-cart.js?v=29526761023566384601782742984",
+			"@theme/sticky-add-to-cart": "//www.withings.com/cdn/shop/t/3/assets/sticky-add-to-cart.js?v=67209632464840479941784724949",
 			"@theme/fly-to-cart": "//www.withings.com/cdn/shop/t/3/assets/fly-to-cart.js?v=48483246440248933081775221205",
 			"@theme/band-upsell": "//www.withings.com/cdn/shop/t/3/assets/band-upsell.js?v=164687724004164031801777907777",
 			"@theme/subscription-block": "//www.withings.com/cdn/shop/t/3/assets/subscription-block.js?v=117890255796237664121784215928",
@@ -1671,7 +1671,7 @@
 <script>var Shopify = Shopify || {};
 Shopify.shop = "0e1fdz-w5.myshopify.com";
 Shopify.locale = "fr";
-Shopify.currency = {"active":"EUR","rate":"0.876727"};
+Shopify.currency = {"active":"EUR","rate":"0.876332"};
 Shopify.country = "FR";
 Shopify.theme = {"name":"theme-withings\/main","id":193736868214,"schema_name":"Horizon","schema_version":"3.5.1","theme_store_id":null,"role":"main"};
 Shopify.theme.handle = "null";
@@ -1730,7 +1730,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
     window.addEventListener('load', asyncLoad, false);
   }
 })();</script>
-<script id="__st">var __st={"a":97801699702,"offset":7200,"reqid":"2854d0d0-56fa-4675-bf89-b3b0b9a3eda5-1784723595","pageurl":"www.withings.com\/fr-fr\/policies\/terms-of-service","u":"d01c7343003c"};</script>
+<script id="__st">var __st={"a":97801699702,"offset":7200,"reqid":"245ce382-066a-43d8-a0d1-4e2603ee4874-1784766799","pageurl":"www.withings.com\/fr-fr\/policies\/terms-of-service","u":"86701868ee19"};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.2.iife.js',D={infoText:'Protégé par hCaptcha',privacyText:'Confidentialité',termsText:'Conditions'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
 <script integrity="sha256-JjoPp5ZfB1sSAs5SQaol1x1GgvveM+BgmRzyDexInEQ=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//www.withings.com/cdn/shopifycloud/storefront/assets/storefront/load_feature-1bd60354.js" crossorigin="anonymous"></script>
@@ -1779,9 +1779,10 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 }
 
       </style>
-<link rel="compression-dictionary" href="//www.withings.com/cdn/shop/t/3/compiled_assets/styles.css?v=55575022198677877481784706883" crossorigin="anonymous">
-<link rel="stylesheet" media="screen" href="//www.withings.com/cdn/shop/t/3/compiled_assets/styles.css?v=55575022198677877481784706883&subset=AAAAAACAAQAAAAAAAAAAABAAAECAAgAAABAAAAAIAAAACQAAYII" crossorigin="anonymous">
+<link rel="compression-dictionary" href="//www.withings.com/cdn/shop/t/3/compiled_assets/styles.css?v=61877976376726150341784738478" crossorigin="anonymous">
+<link rel="stylesheet" media="screen" href="//www.withings.com/cdn/shop/t/3/compiled_assets/styles.css?v=61877976376726150341784738478&subset=AAAAAACAAQAAAAAAAAAAABAAAECAAgAAABAAAAAIAAAACQAAYII" crossorigin="anonymous">
 <script id="shopify-cfh-end">window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
+		
 		
 
 		
@@ -2519,7 +2520,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   window.ShopifyAnalytics = window.ShopifyAnalytics || {};
   window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
   window.ShopifyAnalytics.meta.currency = 'EUR';
-  var meta = {"page":{"requestId":"2854d0d0-56fa-4675-bf89-b3b0b9a3eda5-1784723595"}};
+  var meta = {"page":{"requestId":"245ce382-066a-43d8-a0d1-4e2603ee4874-1784766799"}};
   for (var attr in meta) {
     window.ShopifyAnalytics.meta[attr] = meta[attr];
   }
@@ -2663,7 +2664,7 @@ first.parentNode.insertBefore(script, first);
 
     };
     trekkie.load(
-      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":97801699702,"isMerchantRequest":null,"themeId":193736868214,"themeCityHash":"10201410488846473718","contentLanguage":"fr","currency":"EUR","eventMetadataId":"bba78958-254a-4b60-85c0-58f3ecb5ac3e"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["b5387b81","d5bdd5d0"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":false,"source":"trekkie-storefront-renderer","apiClientId":580111}}
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":97801699702,"isMerchantRequest":null,"themeId":193736868214,"themeCityHash":"4658591981922465085","contentLanguage":"fr","currency":"EUR","eventMetadataId":"0f178381-fea1-427c-9b2e-cc4861207c19"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["b5387b81","d5bdd5d0"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":false,"source":"trekkie-storefront-renderer","apiClientId":580111}}
     );
 
     var loaded = false;
@@ -2686,7 +2687,7 @@ first.parentNode.insertBefore(script, first);
       }
     });
 
-    window.ShopifyAnalytics.lib.page(null,{"requestId":"2854d0d0-56fa-4675-bf89-b3b0b9a3eda5-1784723595","shopifyEmitted":true});
+    window.ShopifyAnalytics.lib.page(null,{"requestId":"245ce382-066a-43d8-a0d1-4e2603ee4874-1784766799","shopifyEmitted":true});
 
     var eventsListenerScript = document.createElement('script');
     eventsListenerScript.async = true;
@@ -3060,7 +3061,7 @@ first.parentNode.insertBefore(script, first);
 										on:click="/drillTo/shop-by-need"
 										aria-haspopup="true"
 									>
-										<span class="ax-mm-drawer__entry-label">Acheter par besoin</span>
+										<span class="ax-mm-drawer__entry-label">Besoin</span>
 										<span class="svg-wrapper ax-mm-drawer__entry-chevron" aria-hidden="true"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M11 5.5L7 9.5L3 5.5" stroke="currentColor" stroke-width="var(--icon-stroke-width)" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
@@ -3074,7 +3075,7 @@ first.parentNode.insertBefore(script, first);
 										href="/fr-fr/pages/health-solutions-homepage"
 										class="ax-mm-drawer__entry-link"
 									>
-										<span class="ax-mm-drawer__entry-label">Pour les professionnels</span>
+										<span class="ax-mm-drawer__entry-label">Professionnels</span>
 									</a></li></ul>
 				</div><div
 							ref="panelViews[]"
@@ -3164,7 +3165,7 @@ first.parentNode.insertBefore(script, first);
 							ref="panelViews[]"
 							class="ax-mm-drawer__view ax-mm-drawer__view--panel"
 							data-handle="shop-by-need"
-							data-title="Acheter par besoin"
+							data-title="Besoin"
 							inert
 						><div
 									class="mega-menu__content mega-menu__content--placeholder"
@@ -3610,7 +3611,7 @@ none;
 				aria-expanded="false"
 			ref="menuitem"
 		>
-			<span class="menu-list__link-title">Acheter par besoin</span>
+			<span class="menu-list__link-title">Besoin</span>
 		</a><div class="menu-list__submenu color-scheme-matches-parent" ref="submenu[]">
 				<div
 					id="submenu-6"
@@ -3689,7 +3690,7 @@ none;
 			class="menu-list__link"
 			ref="menuitem"
 		>
-			<span class="menu-list__link-title">Pour les professionnels</span>
+			<span class="menu-list__link-title">Professionnels</span>
 		</a></li>
 
 
@@ -3870,7 +3871,7 @@ none;
 									<a href="/fr-fr/products/bodyfit-black" tabindex="-1">BodyFit</a></li><li>
 									<a href="/fr-fr/products/body-comp-black" tabindex="-1">Body Comp</a></li><li>
 									<a href="/fr-fr/products/body-smart-black" tabindex="-1">Body Smart</a></li><li>
-									<a href="/fr-fr/collections/scales" tabindex="-1">Plus</a><ul role="list"><li>
+									<a href="/fr-fr/collections/scales" tabindex="-1">Voir plus</a><ul role="list"><li>
 													<a href="/fr-fr/collections/scales" tabindex="-1">Fonctionnalités de l&#39;écosystème de balances</a>
 												</li></ul></li></ul><a href="/fr-fr/pages/compare-scales" tabindex="-1">Comparer les balances</a><a href="/fr-fr/collections/scales" tabindex="-1">Tous nos modèles de balances</a><a href="/fr-fr/pages/about-body-composition" tabindex="-1">Composition corporelle saine</a><a href="/fr-fr/pages/about-body-fat" tabindex="-1">Taux de masse grasse</a></li><li>
 					<a href="/fr-fr/collections/watches" tabindex="-1">Montres</a><ul role="list"><li>
@@ -3906,7 +3907,7 @@ none;
 												</li></ul></li><li>
 									<a href="/fr-fr/collections/accessories" tabindex="-1">Accessoires</a></li></ul></li><li>
 					<a href="/fr-fr/pages/withings-plus" tabindex="-1">Withings+</a></li><li>
-					<a href="/fr-fr/pages/shop-by-need" tabindex="-1">Acheter par besoin</a><ul role="list"><li>
+					<a href="/fr-fr/pages/shop-by-need" tabindex="-1">Besoin</a><ul role="list"><li>
 									<a href="/fr-fr/pages/shop-by-need" tabindex="-1">Cœur</a><ul role="list"><li>
 													<a href="/fr-fr/pages/pulse-watch" tabindex="-1">Surveillez votre fréquence cardiaque</a>
 												</li><li>
@@ -3939,7 +3940,7 @@ none;
 													<a href="/fr-fr/pages/prevent-kidney-stones" tabindex="-1">Prévenez les calculs rénaux</a>
 												</li></ul></li></ul></li><li>
 					<a href="https://support.withings.com/hc/fr" tabindex="-1">Support</a></li><li>
-					<a href="/fr-fr/pages/health-solutions-homepage" tabindex="-1">Pour les professionnels</a></li></ul>
+					<a href="/fr-fr/pages/health-solutions-homepage" tabindex="-1">Professionnels</a></li></ul>
 	</nav>
 	</header-component>
 
@@ -4216,30 +4217,30 @@ none;
 
   <div class="shopify-policy__body">
     <div class="rte">
-        <h2>Partie 1 – Conditions générales</h2>
+        <h2>Partie 1 – Conditions Générales</h2>
 <p><em>Dernière mise à jour : 26 janvier 2023</em></p>
 <h3>Sommaire</h3>
 <ul>
 <li>I. Définitions<br>
 </li>
-<li>II. Application des conditions générales<br>
+<li>II. Application des Conditions Générales<br>
 </li>
 <li>III. Communications<br>
 </li>
 <li>IV. Dispositions diverses</li>
 </ul>
 <h3>I. Définitions</h3>
-<p><strong>Application</strong> désigne une application logicielle développée par WITHINGS, dotée d'une interface graphique, accessible notamment depuis votre smartphone, et depuis laquelle vous interagissez avec les différentes fonctionnalités mises à votre disposition par l'Application, vous permettant notamment d'enregistrer, stocker, consulter et utiliser vos données personnelles, en particulier les données produites par l'utilisation des Produits et Services conçus par WITHINGS.</p>
-<p><strong>Consommateur</strong> désigne toute personne physique agissant à des fins personnelles et non commerciales, n'entrant pas dans le cadre de son activité commerciale, industrielle, artisanale, professionnelle ou agricole.</p>
+<p><strong>Application</strong> désigne une application logicielle développée par WITHINGS, composée d'une interface graphique, accessible notamment depuis votre smartphone, et depuis laquelle vous interagissez avec les différentes fonctionnalités mises à votre disposition par l'Application, vous permettant notamment d'enregistrer, stocker, consulter et utiliser vos données personnelles, en particulier les données produites par l'utilisation des Produits et Services conçus par WITHINGS.</p>
+<p><strong>Consommateur</strong> désigne toute personne physique agissant à des fins personnelles et non commerciales ne relevant pas de son activité commerciale, industrielle, artisanale, professionnelle ou agricole.</p>
 <p><strong>Contrat</strong> désigne tout contrat conclu entre WITHINGS et vous sur la base de la commande confirmée par WITHINGS.</p>
-<p><strong>Conditions générales d'utilisation</strong> désigne les Conditions générales d'utilisation décrites dans le document "Conditions générales d'utilisation" de la Partie 3.</p>
-<p><strong>Compte utilisateur</strong> désigne le compte personnel de l'Utilisateur lui permettant de se connecter à une Application de manière authentifiée et sécurisée et d'accéder aux Services.</p>
-<p><strong>Guide d'utilisation</strong> désigne le document qui, pour chaque Produit, décrit les conditions d'utilisation qui lui sont propres.</p>
+<p><strong>Conditions Générales d'Utilisation</strong> désigne les Conditions Générales d'Utilisation décrites dans le document "Conditions Générales d'Utilisation" en Partie 3.</p>
+<p><strong>Compte Utilisateur</strong> désigne le compte personnel de l'Utilisateur lui permettant de se connecter à une Application de manière authentifiée et sécurisée et d'accéder aux Services.</p>
+<p><strong>Guide d'Utilisation</strong> désigne le document qui, pour chaque Produit, décrit les conditions d'utilisation qui lui sont propres.</p>
 <p><strong>Parties</strong> désigne WITHINGS, les Consommateurs et les Utilisateurs, selon le contexte.</p>
 <p><strong>Produit</strong> désigne l'ensemble des supports matériels de santé connectés WITHINGS, y compris les articles numériques pouvant être commandés sur le Site.</p>
-<p><strong>Service</strong> désigne l'ensemble des contenus numériques, gratuits ou payants, et des services de santé numérique connectés, y compris les moyens d'y accéder. Les Services consistent notamment en : </p>
+<p><strong>Service</strong> désigne l'ensemble des contenus numériques, gratuits ou payants, et des services de santé numérique connectés, y compris les moyens d'y accéder. Les Services comprennent notamment : </p>
 <ul>
-<li>Permettre la création du compte utilisateur Health Mate ;<br>
+<li>Permettre la création du Compte Utilisateur Health Mate ;<br>
 </li>
 <li>Fournir une présentation graphique des données produites par l'utilisation des Produits, y compris vos Données de Santé personnelles, via l'Application Health Mate ;<br>
 </li>
@@ -4247,211 +4248,211 @@ none;
 </li>
 <li>Fourniture des fonctionnalités de partage de données de l'application Health Mate ;<br>
 </li>
-<li>Informer les Utilisateurs des activités, actualités, Produits et services de WITHINGS ;<br>
+<li>Fournir aux Utilisateurs des informations sur les activités, les actualités, les Produits et les services de WITHINGS ;<br>
 </li>
-<li>Envoi de communications marketing ;<br>
+<li>Envoi d'annonces marketing ;<br>
 </li>
-<li>Orienter les utilisateurs vers le service client.</li>
+<li>Orientation des utilisateurs vers le service client.</li>
 </ul>
 <p><strong>Site</strong> désigne le site web disponible à l'adresse : <a href="http://www.withings.com/" rel="noopener" target="_blank">www.withings.com</a></p>
-<p><strong>Utilisateur</strong> ou <strong>Vous</strong> désigne toute personne disposant d'un Compte utilisateur et/ou de Produits et Services, y compris les Visiteurs.</p>
+<p><strong>Utilisateur</strong> ou <strong>Vous</strong> désigne toute personne disposant d'un Compte Utilisateur et/ou de Produits et Services, y compris les Visiteurs.</p>
 <p><strong>Visiteurs</strong> désigne les personnes qui accèdent, naviguent ou consultent le site web de WITHINGS, qu'elles soient ou non des Utilisateurs.</p>
-<p><strong>WITHINGS</strong> ou Nous doit être compris comme incluant chaque entité du Groupe WITHINGS. Toute référence à un affilié du Groupe WITHINGS sera réputée s'appliquer uniquement au document pour lequel cet affilié est spécifiquement désigné comme co-contractant.</p>
-<h3>II. Application des conditions générales</h3>
+<p><strong>WITHINGS</strong> ou Nous doit être compris comme incluant chaque entité du Groupe WITHINGS. Toute référence à un affilié du Groupe WITHINGS est réputée s'appliquer uniquement au document pour lequel cet affilié est spécifiquement désigné comme cocontractant.</p>
+<h3>II. Application des Conditions Générales</h3>
 <h4>2.1. Contrat</h4>
-<p>Les présentes Conditions générales entre Vous (ci-après dénommé "Acheteur", "Vous", "Consommateur") et WITHINGS, société par actions simplifiée dont le siège social est situé au 2, rue Maurice Hartmann, FR-92130 Issy-les-Moulineaux / RCS Nanterre 504 787 565 / N° TVA FR 65 504 787 565 (ci-après dénommée "WITHINGS", "Nous").</p>
+<p>Les présentes Conditions Générales entre Vous (ci-après "Acheteur", "Vous", "Consommateur") et WITHINGS, société par actions simplifiée, dont le siège social est situé au 2, rue Maurice Hartmann, FR-92130 Issy-les-Moulineaux / RCS Nanterre 504 787 565 / N° TVA FR 65 504 787 565 (ci-après "WITHINGS" "Nous").</p>
 <h4>2.2. Composition</h4>
-<p>Les conditions générales de WITHINGS comprennent :</p>
+<p>Les Conditions Générales de WITHINGS comprennent :</p>
 <ul>
-<li>Ces Conditions Générales (Partie 1)<br>
+<li>Les présentes Conditions générales (Partie 1)<br>
 </li>
-<li>Les Conditions générales de vente (Partie 2)<br>
+<li>Les Conditions Générales de Vente (Partie 2)<br>
 </li>
-<li>Conditions générales d'utilisation (Partie 3)<br>
+<li>Conditions Générales d'Utilisation (Partie 3)<br>
 </li>
-<li>La Politique de confidentialité (Partie 4)</li>
+<li>La Politique de Confidentialité (Partie 4)</li>
 </ul>
-<p>Les Produits et Services doivent être utilisés conformément à leur Guide d'utilisation, disponible sur le <a href="https://support.withings.com/hc/" rel="noopener" target="_blank">Centre d'aide WITHINGS</a> pour les Produits et Services.</p>
+<p>Les Produits et Services doivent être utilisés conformément à leur Guide d'Utilisation, disponible au <a href="https://support.withings.com/hc/" rel="noopener" target="_blank">Centre d'Aide WITHINGS</a> pour les Produits et Services.</p>
 <h4>2.3. Objet</h4>
-<p>Les Conditions générales ont pour objet de définir les conditions de vente et d'utilisation des Produits et Services. Elles contiennent des informations importantes sur vos droits et obligations.</p>
+<p>L'objet des Conditions Générales est de déterminer les conditions de vente et d'utilisation des Produits et Services. Elles contiennent des informations importantes sur vos droits et obligations.</p>
 <h4>2.4. Reconnaissance</h4>
-<p><strong>a. Vente.</strong> Vous reconnaissez et garantissez (i) avoir obtenu et pris connaissance des présentes Conditions générales, (ii) que vous utiliserez les Produits et Services de santé connectés fournis par WITHINGS à des fins personnelles et non commerciales uniquement, (iii) que vous êtes majeur ou autorisé par les lois de votre pays de résidence à vous engager contractuellement avec Nous ; (iv) que le fait de passer une commande sur le Site sera considéré comme une acceptation sans réserve des Conditions générales auxquelles vous aurez accès avant le paiement de votre commande et que vous aurez lues et acceptées ; et (v) que vous avez été pleinement informé que le fait de passer une commande sur le Site implique une obligation de paiement.</p>
+<p><strong>a. Vente.</strong> Vous reconnaissez et garantissez (i) que vous avez obtenu et lu les présentes Conditions Générales, (ii) que vous utiliserez les Produits et Services de santé connectés fournis par WITHINGS à des fins personnelles et non commerciales uniquement, (iii) que vous êtes majeur ou autorisé en vertu des lois de votre pays de résidence à vous engager contractuellement avec Nous ; (iv) que le fait de passer une commande sur le Site sera considéré comme une acceptation sans réserve des Conditions Générales auxquelles vous aurez accès avant le paiement de votre commande et que vous avez lues et acceptées ; et (v) que vous avez été pleinement informé que le fait de passer une commande sur le Site entraîne une obligation de paiement.</p>
 <p><strong>b. Utilisation.</strong> L'utilisation des Produits et Services requiert l'acceptation préalable et sans réserve des Conditions Générales. Vous acceptez expressément les conditions en cochant la case prévue à cet effet lors de la création de votre compte. Vous pouvez à tout moment consulter les CGU en vigueur, disponibles sur chaque page du Site.</p>
 <h4>2.5. Durée</h4>
-<p>Les présentes Conditions Générales d'Utilisation sont adoptées, après acceptation, pour toute la durée d'utilisation des Produits et Services. Elles s'appliquent à toute modification des Produits et Services, à toute nouvelle version, service ou fonctionnalité de nos Produits et Services, quelle que soit la manière dont ils sont accessibles.</p>
+<p>Les présentes Conditions Générales d'Utilisation sont adoptées, après leur acceptation, pour toute la période pendant laquelle les Produits et Services sont utilisés. Elles s'appliquent à toute modification des Produits et Services, à toute nouvelle version, tout nouveau service ou toute nouvelle fonctionnalité de nos Produits et Services, quelle que soit la manière dont ils sont accessibles.</p>
 <h4>2.6. Modification</h4>
-<p>Nous pouvons modifier les Conditions générales, notamment pour nous adapter aux évolutions juridiques, ainsi qu'aux évolutions des Produits et Services. Dans ce cas, nous vous en informerons dans les meilleurs délais sur la première page du Site et/ou dans l'onglet "mon compte" de l'Application mobile ou par e-mail. Toute nouvelle utilisation des Produits et Services après notification et publication d'une nouvelle version des Conditions générales vaut acceptation.</p>
+<p>Nous pouvons modifier les Conditions Générales, notamment pour nous adapter aux évolutions juridiques, ainsi qu'aux évolutions des Produits et Services. Dans ce cas, nous vous en informerons dans les meilleurs délais sur la première page du Site et/ou dans l'onglet "mon compte" de l'Application Mobile ou par e-mail. Toute nouvelle utilisation des Produits et Services après notification et publication d'une nouvelle version des Conditions Générales vaut acceptation.</p>
 <h3>III. Communications</h3>
-<h4>3.1. Lorsque vous nous contactez</h4>
-<p>Si vous avez des questions ou des demandes concernant les Applications, les Produits et/ou les Services, ainsi que les notifications associées, veuillez nous envoyer un message sur <a href="https://support.withings.com/hc/fr" rel="noopener" target="_blank">cette page</a>. Nous vous répondrons dans les meilleurs délais.</p>
-<h4>3.2. Lorsque nous vous contactons</h4>
-<p>En utilisant les Services, vous acceptez que la majeure partie de nos communications s'effectue par voie électronique et que nous vous transmettions les notifications en les publiant sur l'Application ou en vous les envoyant par e-mail. Il vous appartient de consulter régulièrement vos e-mails afin que nous puissions vous contacter à tout moment. Les notifications envoyées seront réputées avoir été envoyées le jour de leur publication.</p>
+<h4>3.1. Lorsque vous nous écrivez</h4>
+<p>Si vous avez des questions ou des demandes concernant les Applications, les Produits et/ou les Services, et toute notification associée, veuillez nous envoyer un message sur <a href="https://support.withings.com/hc/fr" rel="noopener" target="_blank">cette page</a>. Nous vous répondrons dans les plus brefs délais.</p>
+<h4>3.2. Lorsque nous vous écrivons</h4>
+<p>En utilisant les Services, vous acceptez que la majeure partie de nos communications soit échangée par voie électronique et que nous vous fournissions des notifications en les publiant sur l'application ou en vous les envoyant par e-mail. Il vous incombe de consulter régulièrement vos e-mails afin que nous puissions vous contacter à tout moment. Les notifications envoyées sont réputées avoir été transmises le jour de leur publication.</p>
 <h4>3.3. Preuve</h4>
-<p>Tous les échanges effectués via les Applications ou envoyés par e-mail, tels qu'enregistrés dans les systèmes de WITHINGS et conservés sur un support de stockage conforme aux normes applicables, sont présumés fiables et les Parties les considéreront comme authentiques jusqu'à preuve du contraire. La portée de la preuve des informations délivrées par les systèmes informatiques de WITHINGS, notamment la procédure de double-clic, à savoir la vérification des engagements et leur confirmation, en tant que signature électronique, constitue la validation du contrat électronique.</p>
+<p>Tous les échanges effectués via les Applications ou envoyés par e-mail, tels qu'enregistrés dans les systèmes de WITHINGS et conservés sur un support de stockage conforme aux normes applicables, sont présumés fiables et les Parties les considéreront comme authentiques jusqu'à preuve du contraire. La portée de la preuve des informations délivrées par les systèmes informatiques de WITHINGS, notamment la procédure du double-clic, à savoir la vérification de ses engagements et leur confirmation, en tant que signature électronique, constitue la validation du contrat électronique.</p>
 <h3>IV. Dispositions diverses</h3>
-<h4>4.1. Survie des clauses</h4>
-<p>Si une disposition des présentes Conditions générales est jugée invalide ou inapplicable par un tribunal ou une juridiction compétente, la partie ou disposition invalide ou inapplicable sera réputée non écrite.</p>
+<h4>4.1. Maintien des clauses</h4>
+<p>Si une disposition des présentes Conditions Générales est jugée invalide ou inapplicable par un tribunal ou une juridiction compétente, la partie ou disposition invalide ou inapplicable sera réputée non écrite.</p>
 <h4>4.2. Non-renonciation</h4>
 <p>Le fait de ne pas exiger à un moment donné l'exécution de l'une de vos obligations ne constitue pas une renonciation au droit d'en exiger l'exécution ultérieurement.</p>
-<h4>4.3. Force majeure</h4>
-<p>Tout événement réputé imprévisible, irrésistible et extérieur, empêchant WITHINGS de remplir ses obligations conformément aux Conditions Générales, est considéré comme un événement de Force Majeure. À titre d'exemples, ces cas incluent les incendies, inondations, accidents, explosions, catastrophes nucléaires, séismes, tempêtes, ouragans, tsunamis, épidémies, dommages aux équipements industriels, pannes de systèmes informatiques, sabotages, grèves ou autres conflits du travail, guerres, actes ou omissions d'autorités locales ou gouvernementales, ainsi que les difficultés d'approvisionnement en énergie, matières premières, composants ou main-d'œuvre.</p>
+<h4>4.3. Force Majeure</h4>
+<p>Tout événement jugé imprévisible, insurmontable et extérieur, empêchant WITHINGS de remplir ses obligations conformément aux Conditions Générales, est considéré comme un événement de Force Majeure. À titre d'exemple, ces cas comprennent les incendies, les inondations, les accidents, les explosions, les catastrophes nucléaires, les tremblements de terre, les tempêtes, les ouragans, les tsunamis, les épidémies, les dommages aux équipements industriels, les pannes de systèmes informatiques, le sabotage, les grèves ou autres conflits du travail, les guerres, les actes ou omissions d'une autorité locale ou gouvernementale, ainsi que les difficultés d'approvisionnement en énergie, matières premières, composants ou main-d'œuvre.</p>
 <hr>
-<h2>Partie 2 – Contrat de licence du logiciel développeur Withings (Conditions d'utilisation de l'API)</h2>
+<h2>Partie 2 – Accord de Licence Développeur Withings (Conditions d'Utilisation de l'API)</h2>
 <p><em>Dernière mise à jour : 12 septembre 2018</em></p>
 <h3>Pour les API de santé numérique Withings</h3>
-<p><strong>Veuillez lire attentivement le présent Contrat de licence du logiciel développeur Withings avant d'accéder, de télécharger ou d'utiliser toute partie du Logiciel API Withings pour les produits et Services de santé numérique Withings. En accédant, téléchargeant, installant, utilisant ou en cliquant sur le bouton "Accepter" lors de l'inscription, du téléchargement, de l'installation et/ou de l'utilisation du Logiciel, vous acceptez les conditions générales du présent Accord.</strong></p>
-<p><strong>Veuillez noter que le présent Accord est structuré en deux sections : (i) les conditions générales applicables à la plupart des distributions de logiciels développeurs Withings ; et (ii) les conditions supplémentaires applicables à certaines parties du Logiciel ou aux contenus, services, ajouts et extensions associés, spécifiques au Logiciel fourni. Veuillez vous assurer de prendre connaissance de l'intégralité des conditions fournies, car les restrictions importantes relatives à votre utilisation du Logiciel sont souvent incluses en tant que conditions supplémentaires.</strong></p>
+<p><strong>Veuillez lire attentivement le présent Accord de Licence Développeur Withings avant d'accéder, de télécharger ou d'utiliser toute partie du Logiciel API Withings pour les produits de santé numérique et les Services Withings. En accédant, téléchargeant, installant, utilisant ou en cliquant sur le bouton "Accepter" lors de l'inscription, du téléchargement, de l'installation et/ou de l'utilisation du Logiciel, Vous acceptez les termes et conditions du présent Accord.</strong></p>
+<p><strong>Veuillez noter que le présent Accord est structuré en deux sections : (i) des conditions générales applicables à la plupart des distributions de logiciels développeurs Withings ; et (ii) des conditions générales supplémentaires applicables à certaines parties du Logiciel ou aux contenus, services, ajouts et extensions associés, spécifiques au Logiciel particulier fourni. Veuillez vous assurer de lire l'intégralité des conditions fournies, car des restrictions importantes relatives à votre utilisation du Logiciel sont souvent incluses en tant que conditions supplémentaires.</strong></p>
 <h3>Conditions générales</h3>
 <h4>1. Acceptation</h4>
-<p>Le présent Accord pour développeurs Withings (l'"Accord") régit Votre utilisation du Logiciel (tel que défini ci-dessous) et les présentes conditions générales constituent un accord entre Vous (personne physique ou morale) et Withings Ltd., y compris ses affiliés et fournisseurs (collectivement "Withings"), définissant les droits et responsabilités de Vous et de Withings à l'égard du Logiciel.</p>
-<p>Des conditions générales supplémentaires spécifiques au Logiciel fourni peuvent s'appliquer à certaines parties du Logiciel ou aux contenus, services, ajouts et extensions associés.</p>
-<p>Vous n'êtes pas autorisé à utiliser le Logiciel si vous n'acceptez pas ces conditions générales.</p>
+<p>Le présent Accord de Licence Développeur Withings (l'"Accord") régit Votre utilisation du Logiciel (tel que défini ci-dessous) et les présentes conditions générales constituent un accord entre Vous (personne physique ou entité) et Withings Ltd., y compris ses affiliés et fournisseurs (collectivement "Withings"), définissant les droits et responsabilités de Vous et de Withings concernant le Logiciel.</p>
+<p>Des conditions générales supplémentaires propres au Logiciel fourni ou applicables à certaines parties du Logiciel ou aux contenus, services, compléments et extensions associés peuvent exister.</p>
+<p>Vous n'êtes pas autorisé à utiliser le Logiciel si vous n'acceptez pas les présentes conditions générales.</p>
 <h4>2. Définitions</h4>
-<p><strong>"Application"</strong> désigne un ou plusieurs programmes logiciels développés par Vous conformément aux exigences énoncées dans le présent Accord et à la documentation fournie par Withings, sous votre propre marque commerciale ou marque de fabrique, y compris les corrections de bogues, mises à jour, améliorations et nouvelles versions de ces programmes logiciels.</p>
-<p><strong>"Utilisateurs Autorisés"</strong> désigne Vous ainsi que Vos employés et sous-traitants ou, si Vous êtes un établissement d'enseignement, Votre corps enseignant et Votre personnel, selon le cas, qui (a) disposent chacun d'un compte valide auprès de Withings, (b) ont un besoin avéré de connaître ou d'utiliser le Logiciel afin de développer et de tester des Applications, et (c) dans la mesure où ces personnes auront accès à des Informations Confidentielles, ont chacune conclu avec Vous des accords écrits et contraignants pour protéger l'utilisation non autorisée et la divulgation de ces Informations Confidentielles.</p>
-<p><strong>"Logiciel"</strong> désigne (i) le produit logiciel de l'API Withings pour la santé numérique (code source et/ou code objet selon le cas), à l'exception des Logiciels Open Source (tels que définis ci-dessous), la documentation, les exemples de code, les simulateurs, les outils, les bibliothèques, les interfaces de programmation d'applications (API), les données, fichiers et matériaux fournis ou mis à disposition par Withings pour être utilisés par Vous dans le cadre du développement de Votre Application, et comprend toutes les mises à jour pouvant être fournies ou mises à disposition par Withings.</p>
-<p><strong>"Open Source Software"</strong> désigne tout logiciel qui, tel qu'inclus dans le Logiciel, est soumis à des conditions de licence actuellement répertoriées sur http://opensource.org/licenses/ ou répondant aux critères énoncés sur http://www.opensource.org/docs/definition.php, ou qui est soumis à des conditions de licence libres ou open source similaires. Les logiciels Open Source contenus dans le Logiciel sont concédés sous licence selon les conditions accompagnant ces logiciels Open Source et non selon les termes du présent Accord.</p>
-<p><strong>"Vous"</strong> ou <strong>"Votre"</strong> désigne la ou les personnes ou entités utilisant le Logiciel ou exerçant par ailleurs des droits en vertu du présent Accord. Si vous acceptez le présent Accord au nom de votre société, organisation ou autre entité, "Vous" ou "Votre" désigne également votre société, organisation ou autre entité.</p>
+<p><strong>"Application"</strong> désigne un ou plusieurs programmes logiciels développés par Vous conformément aux exigences énoncées dans le présent Accord et à la documentation fournie par Withings, sous votre propre marque ou marque commerciale, y compris les correctifs de bogues, les mises à jour, les améliorations et les nouvelles versions de ces programmes logiciels.</p>
+<p><strong>"Utilisateurs Autorisés"</strong> désigne Vous et vos employés et sous-traitants ou, si Vous êtes un établissement d'enseignement, votre corps enseignant et votre personnel, selon le cas, qui (a) disposent chacun d'un compte valide auprès de Withings, (b) ont un besoin démontrable de connaître ou d'utiliser le Logiciel afin de développer et de tester des Applications, et (c) dans la mesure où ces personnes auront accès à des Informations Confidentielles, ont chacune conclu avec Vous des accords écrits et contraignants pour protéger l'utilisation non autorisée et la divulgation de ces Informations Confidentielles.</p>
+<p><strong>"Logiciel"</strong> désigne (i) le produit logiciel de l'API Withings dédié à la santé numérique (code source et/ou code objet selon le cas), à l'exception des Logiciels Open Source (tels que définis ci-dessous), la documentation, les exemples de code, les simulateurs, les outils, les bibliothèques, les interfaces de programmation d'applications (API), les données, les fichiers et les matériaux fournis ou mis à disposition par Withings pour être utilisés par Vous dans le cadre du développement de Votre Application, et comprend toutes les mises à jour qui pourraient être fournies ou mises à disposition par Withings.</p>
+<p><strong>"Logiciel Open Source"</strong> désigne tout logiciel qui, tel qu'inclus dans le Logiciel, est soumis à des conditions de licence actuellement répertoriées sur http://opensource.org/licenses/ ou répondant aux critères listés sur http://www.opensource.org/docs/definition.php ou qui est soumis à des conditions de licence libre ou open source similaires. Le Logiciel Open Source contenu dans le Logiciel est concédé sous licence conformément aux conditions de licence accompagnant ce Logiciel Open Source et non aux termes du présent Accord.</p>
+<p><strong>"Vous"</strong> ou <strong>"Votre"</strong> désigne la ou les personnes ou entité utilisant le Logiciel ou exerçant par ailleurs des droits en vertu du présent Accord. Si vous acceptez le présent Accord au nom de votre entreprise, organisation ou autre entité, "Vous" ou "Votre" désigne également votre entreprise, organisation ou autre entité.</p>
 <h4>3. Éligibilité</h4>
-<p>Vous devez avoir la capacité juridique pour conclure le présent Accord. Vous devez donc avoir atteint l'âge de la majorité légale dans la juridiction où vous résidez (au moins 18 ans dans la plupart des pays) et avoir le droit et l'autorité de conclure le présent Accord en votre propre nom, ou, si vous concluez le présent Accord au nom de votre société, organisation ou autre entité, vous devez avoir le droit et l'autorité d'engager juridiquement votre société, organisation ou autre entité aux termes et obligations du présent Accord.</p>
+<p>Vous devez être légalement compétent pour exécuter le présent Accord. Vous devez donc avoir atteint l'âge légal de la majorité dans la juridiction dans laquelle vous résidez (au moins 18 ans dans la plupart des pays) et avoir le droit et l'autorité de conclure le présent Accord en votre propre nom, ou si vous concluez le présent Accord au nom de votre entreprise, organisation ou autre entité, vous avez le droit et l'autorité de lier juridiquement votre entreprise, organisation ou autre entité aux termes et obligations du présent Accord.</p>
 <h4>4. Inscription et résiliation</h4>
-<p>Vous vous engagez à fournir des informations véridiques et complètes lors de votre inscription au Logiciel et à maintenir ces informations à jour. Il est interdit de fournir des informations trompeuses sur votre identité.</p>
-<p>Vous pouvez résilier Votre/Vos inscription(s) si Vous ne souhaitez plus utiliser le Logiciel. Après résiliation, Vous ne pourrez plus accéder au Logiciel. Withings peut résilier ou restreindre Votre accès à tout ou partie du Logiciel ou des services associés s'il existe un motif indiquant que Vous avez enfreint le présent Accord ou toute loi ou réglementation applicable.</p>
-<p>Vous pouvez résilier le présent Accord à tout moment en désinstallant et/ou supprimant définitivement, à Vos propres frais, le Logiciel et toutes les copies de sauvegarde, ainsi que tous les matériaux associés fournis par Withings, et en cessant d'utiliser le Logiciel. Tous Vos droits prennent fin automatiquement et immédiatement, sans préavis de Withings, si Vous ne respectez pas l'une des dispositions du présent Accord. Dans ce cas, Vous devez immédiatement désinstaller et/ou supprimer, à Vos propres frais, le Logiciel, toutes les copies de sauvegarde et tous les autres matériaux associés fournis par Withings, ainsi que cesser d'utiliser le Logiciel.</p>
-<p>Withings peut, à sa seule discrétion, fournir des mises à jour du Logiciel de temps à autre. Withings peut également fournir des mises à jour considérées comme importantes ou critiques par Withings, auquel cas vous ne pourrez pas continuer à utiliser la version précédente du Logiciel et l'utilisation de cette version précédente pourra être bloquée tant que la mise à jour n'aura pas été installée. Certains services ou fonctionnalités associés au Logiciel peuvent ne pas être disponibles lors des interruptions de maintenance et à d'autres moments. Withings peut également décider d'interrompre le Logiciel, le service associé ou toute partie de celui-ci à sa seule discrétion. Dans ce cas, vous serez informé au préalable et Withings pourra résilier le Contrat en conséquence.</p>
-<h4>5. Mises à jour des conditions</h4>
-<p>Withings se réserve le droit de modifier ou d'amender les conditions du présent Accord à tout moment et sans préavis. Si les conditions sont modifiées de manière substantielle et défavorable, Withings fournira un avis séparé informant de ce changement. Afin de continuer à utiliser le Logiciel, Vous devez accepter et approuver les nouvelles conditions du présent Accord. Si Vous n'acceptez pas les nouvelles conditions, Votre utilisation du Logiciel sera suspendue ou résiliée par Withings.</p>
+<p>Vous acceptez de fournir des informations véridiques et complètes lors de votre inscription au Logiciel et de maintenir ces informations à jour. Fournir des informations trompeuses sur votre identité est interdit.</p>
+<p>Vous pouvez résilier votre ou vos inscription(s) si vous ne souhaitez plus utiliser le Logiciel. Après résiliation, vous ne pourrez plus accéder au Logiciel. Withings peut résilier ou restreindre votre accès à tout ou partie du Logiciel ou des services associés s'il existe une indication que vous avez enfreint le présent Accord ou toute loi ou réglementation applicable.</p>
+<p>Vous pouvez résilier le présent Accord à tout moment en désinstallant et/ou supprimant définitivement, à vos propres frais, le Logiciel et toute copie de sauvegarde, ainsi que tous les documents connexes fournis par Withings, et en cessant d'utiliser le Logiciel. Tous vos droits cessent automatiquement et immédiatement sans préavis de la part de Withings si vous ne respectez pas une disposition du présent Accord. Dans ce cas, vous devez immédiatement désinstaller et/ou supprimer, à vos propres frais, le Logiciel, toutes les copies de sauvegarde et tous les autres documents connexes fournis par Withings, ainsi que cesser d'utiliser le Logiciel.</p>
+<p>Withings peut, à sa seule discrétion, fournir des mises à jour du Logiciel de temps à autre. Withings peut également fournir des mises à jour jugées importantes ou critiques par Withings, auquel cas vous ne pourrez pas continuer à utiliser la version précédente du Logiciel et l'utilisation de la version précédente du Logiciel pourra être bloquée sans installation de la mise à jour. Certains services ou fonctionnalités associés au Logiciel peuvent ne pas être disponibles pendant les interruptions de maintenance et à d'autres moments. Withings peut également décider, à sa seule discrétion, d'interrompre le Logiciel, le service associé ou toute partie de celui-ci. Dans ce cas, une notification préalable vous sera fournie et Withings pourra résilier l'Accord en conséquence.</p>
+<h4>5. Mises à jour des Conditions</h4>
+<p>Withings se réserve le droit de modifier ou de réviser les termes et conditions du présent Accord à tout moment et sans préavis. Si les termes sont modifiés de manière substantielle et défavorable, Withings fournira un avis séparé pour vous en informer. Pour continuer à utiliser le Logiciel, vous devez accepter et approuver les nouveaux termes du présent Accord. Si vous n'acceptez pas les nouveaux termes, votre utilisation du Logiciel sera suspendue ou résiliée par Withings.</p>
 <h4>6. Utilisation du Logiciel</h4>
-<p>Vous certifiez et acceptez par la présente de respecter les termes du présent Accord, et vous vous engagez à surveiller et à être responsable de l'utilisation du Logiciel par Vos Utilisateurs Autorisés ainsi que de leur conformité aux termes du présent Accord. Vous ne pouvez accorder l'accès au Logiciel qu'aux Utilisateurs Autorisés.</p>
-<p>Le Logiciel est mis à votre disposition dans le seul but de développer et tester votre ou vos Applications. Vous pouvez installer, le cas échéant, un nombre raisonnable de copies du Logiciel sur des ordinateurs dont vous êtes propriétaire ou que vous contrôlez, pour être utilisées par vous ou vos Utilisateurs autorisés pendant la durée du présent Accord.</p>
-<p>En tant que condition d'utilisation du Logiciel, vous acceptez par les présentes que :</p>
+<p>Vous certifiez et acceptez par la présente que Vous respecterez les termes du présent Accord et Vous acceptez de surveiller et d'être responsable de l'utilisation du Logiciel par Vos Utilisateurs Autorisés et de leur conformité aux termes du présent Accord. Vous ne pouvez pas accorder l'accès au Logiciel à d'autres personnes que les Utilisateurs Autorisés.</p>
+<p>Le Logiciel est mis à votre disposition dans le seul but de développer et de tester vos Application(s). Vous pouvez installer, le cas échéant, un nombre raisonnable de copies du Logiciel sur des ordinateurs que vous possédez ou contrôlez, à l'usage de Vous-même ou de vos Utilisateurs Autorisés pendant la durée du présent Accord.</p>
+<p>En tant que condition préalable à l'utilisation du Logiciel, Vous acceptez par la présente que :</p>
 <ol>
 <li> </li>
-<li>Vous n'utiliserez pas le Logiciel de quelque manière ou à quelque fin que ce soit en violation du présent Accord ou de toute loi ou réglementation applicable, y compris, sans s'y limiter, tout droit de propriété intellectuelle ou autre droit de propriété, tout droit d'une personne, les droits à la vie privée ou les droits de la personnalité ;</li>
+<li>Vous n'utiliserez pas le Logiciel d'une manière ou à des fins qui violeraient le présent Accord ou toute loi ou réglementation applicable, y compris, sans s'y limiter, tout droit de propriété intellectuelle ou autre droit exclusif, tout droit d'une personne, les droits à la vie privée ou les droits de la personnalité ;</li>
 <li> </li>
-<li>Vous ne distribuerez ni ne publierez de spam, de fichiers d'une taille déraisonnable, de chaînes de lettres, de systèmes pyramidaux, de codes malveillants, de virus ou toute autre technologie ou contenu susceptible de nuire au Logiciel, aux autres utilisateurs, aux serveurs ou au réseau ;</li>
+<li>Vous ne distribuerez pas et ne publierez pas de spam, de fichiers de taille déraisonnable, de chaînes de messages, de systèmes pyramidaux, de code malveillant, de virus ou toute autre technologie ou contenu susceptible de nuire au Logiciel, aux autres utilisateurs, aux serveurs ou au réseau ;</li>
 <li> </li>
-<li>Vous n'utiliserez pas le Logiciel en lien avec tout contenu ou document illicite, offensant, abusif, obscène, pornographique, harcelant, diffamatoire ou autrement inapproprié ;</li>
+<li>Vous n'utiliserez pas le Logiciel en lien avec tout contenu ou matériel illicite, offensant, abusif, obscène, pornographique, harcelant, diffamatoire ou autrement inapproprié ;</li>
 <li> </li>
-<li>Vous serez seul responsable de tous les coûts, dépenses, pertes et responsabilités engagés, ainsi que des activités entreprises par Vous et les Utilisateurs Autorisés en lien avec le Logiciel, Vos Applications et Vos efforts de développement associés ;</li>
+<li>Vous serez seul responsable de tous les coûts, dépenses, pertes et responsabilités engagés, ainsi que des activités entreprises par Vous et les Utilisateurs Autorisés en lien avec le Logiciel, Vos Applications et vos efforts de développement associés ;</li>
 <li> </li>
-<li>Vous ne supprimerez ni ne masquerez aucune mention de droits d'auteur ou de marque commerciale ni aucune autre mention similaire, marque ou légende figurant dans le Logiciel ;</li>
+<li>Vous ne supprimerez pas et ne masquerez pas les mentions de droits d'auteur ou de marques commerciales, ni d'autres avis, marquages ou mentions similaires présents dans le Logiciel ;</li>
 <li> </li>
-<li>Vous n'introduirez dans le Logiciel aucune donnée d'identification qui aurait été portée à la connaissance d'un professionnel de santé, tel qu'un médecin, par quelque moyen que ce soit.</li>
+<li>Vous n'introduirez pas dans le Logiciel de données d'identification ayant été portées à l'attention d'un professionnel de santé, tel qu'un médecin, par quelque moyen que ce soit.</li>
 </ol>
-<p>Nonobstant toute disposition contraire des présentes, vous ne pouvez pas (a) procéder à de l'ingénierie inverse, décompiler, désassembler ou tenter de toute autre manière de découvrir le code source du Logiciel, sauf et uniquement dans la mesure permise par la loi impérative applicable ; (b) modifier ou créer des œuvres dérivées du Logiciel, sauf et uniquement dans la mesure autorisée par Withings ; ou (c) distribuer, communiquer au public, exporter, réexporter, accorder en sous-licence, louer, prêter, crédit-bail, divulguer, vendre, commercialiser, accorder à nouveau une licence, héberger ou autrement transférer ou mettre à la disposition de tout tiers (y compris, sans limitation, tout affilié et sous-traitant) le Logiciel (ou toute partie de celui-ci).</p>
-<p>Aucune disposition du présent Accord ni aucune autre mesure ne saurait empêcher Withings de développer, distribuer et/ou utiliser toute application qui concurrence directement ou indirectement votre application.</p>
-<h4>7. Exigences relatives à vos applications</h4>
-<p>Votre Application développée à l'aide du Logiciel, ou toute partie de celle-ci, doit satisfaire aux critères et exigences suivants, tels que Withings peut les modifier de temps à autre :</p>
+<p>Nonobstant toute disposition contraire des présentes, vous ne pouvez pas (a) procéder à de l'ingénierie inverse, décompiler, désassembler ou tenter de quelque autre manière de découvrir le code source du Logiciel, sauf et uniquement dans la mesure permise par la loi obligatoire applicable ; (b) modifier ou créer des œuvres dérivées du Logiciel, sauf et uniquement dans la mesure autorisée par Withings ; ou (c) distribuer, communiquer au public, exporter, réexporter, sous-licencier, louer, prêter, crédit-bail, divulguer, vendre, commercialiser, relicencier, héberger, ou autrement transférer ou mettre à disposition de tout tiers (y compris, sans limitation, tout affilié et sous-traitant) le Logiciel (ou toute partie de celui-ci).</p>
+<p>Rien dans le présent Accord ou ailleurs n'empêche Withings de développer, distribuer et/ou utiliser toute application qui concurrence directement ou indirectement Votre Application.</p>
+<h4>7. Exigences relatives à Vos Applications</h4>
+<p>Votre Application développée à l'aide du Logiciel, ou toute partie de celle-ci, doit satisfaire aux critères et exigences suivants, tels qu'ils peuvent être modifiés par Withings de temps à autre :</p>
 <ol>
 <li> </li>
-<li>Votre Application sera développée et utilisée en conformité avec le présent Accord ou toute loi ou réglementation applicable, y compris, sans s'y limiter, tout droit de propriété intellectuelle ou autre droit de propriété, tout droit d'une personne, les droits à la vie privée ou les droits de la personnalité ;</li>
+<li>Votre Application sera développée et utilisée conformément au présent Accord ou à toute loi ou réglementation applicable, y compris, sans s'y limiter, tout droit de propriété intellectuelle ou autre droit exclusif, tout droit d'une personne, les droits à la vie privée ou les droits de la personnalité ;</li>
 <li> </li>
-<li>Votre Application sera développée conformément à la documentation, aux directives techniques et aux autres exigences que Withings pourra fournir de temps à autre ;</li>
+<li>Votre Application sera développée conformément à la documentation, aux directives techniques et aux autres exigences que Withings peut fournir de temps à autre ;</li>
 <li> </li>
-<li>Votre Application ne viole pas et ne violera pas, à votre connaissance, tout droit d'auteur, brevet, marque commerciale, secret commercial, droit à la vie privée ou tout autre droit exclusif ou légal de tout tiers ou de Withings, et n'en constitue pas et n'en constituera pas une appropriation illicite ou une contrefaçon ;</li>
+<li>Votre Application ne viole pas et ne violera pas, à votre connaissance, n'utilise pas de manière abusive et ne portera pas atteinte à tout droit d'auteur, brevet, marque commerciale, secret commercial, droit à la vie privée ou autre droit de propriété ou droit légal de tout tiers ou de Withings ;</li>
 <li> </li>
-<li>Votre application ne doit contenir ni transmettre de virus, fichiers, codes malveillants ou tout autre logiciel malveillant susceptible de nuire au fonctionnement normal d'un appareil ou d'un réseau, ou de le perturber ;</li>
+<li>Votre Application ne doit pas contenir ni transférer de virus, fichiers, logiciels malveillants ou tout autre programme malveillant susceptible de nuire au fonctionnement normal de l'appareil ou du réseau ou de le perturber ;</li>
 <li> </li>
-<li>Votre Application doit identifier la nature et le fournisseur (y compris les coordonnées) de l'application, fonctionner conformément à ce qui est annoncé et ne contenir aucune information ou déclaration fausse, frauduleuse ou trompeuse ;</li>
+<li>Votre Application doit identifier la nature et le fournisseur (y compris les coordonnées) de l'application, fonctionner comme annoncé et ne contenir aucune information ou représentation fausse, frauduleuse ou trompeuse ;</li>
 <li> </li>
-<li>Vous informerez clairement les utilisateurs de Votre/Vos Application(s) (par exemple dans l'interface de l'Application) que l'utilisation de la/des Application(s) génère du trafic de données ;</li>
+<li>Vous informerez clairement les utilisateurs de Votre ou Vos Application(s) (par exemple dans l'interface utilisateur de l'Application) que l'utilisation de l'ou des Application(s) génère du trafic de données ;</li>
 <li> </li>
-<li>Vous fournirez aux utilisateurs de la ou des Applications des paramètres simples pour désactiver les notifications ;</li>
+<li>Vous fournirez aux utilisateurs de l'ou des Application(s) des paramètres faciles d'accès pour désactiver les notifications ;</li>
 <li> </li>
-<li>Vous ne concevrez ni ne commercialiserez l'Application, ou toute partie de celle-ci, pour une utilisation dans ou avec des systèmes, appareils ou produits essentiels à la santé et/ou à la sécurité d'autres personnes et de leurs biens (par exemple, destinés à être implantés chirurgicalement dans le corps ou toute autre application destinée à maintenir ou à soutenir la vie, ou pour toute application dans le domaine de l'aviation ou des réacteurs nucléaires), ni pour toute autre application dans laquelle le logiciel ou sa défaillance, son dysfonctionnement ou son insuffisance pourrait directement ou indirectement causer ou contribuer à des blessures corporelles, à des décès ou à des dommages matériels importants ;</li>
+<li>Vous ne concevrez pas et ne commercialiserez pas l'Application, ni aucune partie de celle-ci, pour une utilisation dans ou avec des systèmes, appareils ou produits critiques pour la santé et/ou la sécurité d'autres personnes et de leurs biens (par exemple, destinés à être implantés chirurgicalement dans le corps ou à d'autres applications destinées à maintenir ou prolonger la vie, ou à toute application de réacteur nucléaire ou aéronautique) ou toute autre application dans laquelle le logiciel ou sa défaillance, son dysfonctionnement ou son inadéquation pourrait directement ou indirectement causer ou contribuer à des blessures corporelles ou à des décès ou à des dommages matériels significatifs ;</li>
 <li> </li>
-<li>Votre Application ne doit pas permettre l'envoi de notifications push acheminées depuis d'autres systèmes de notification et serveurs fournis par des tiers ;</li>
+<li>Votre Application ne doit pas permettre les notifications push acheminées depuis d'autres systèmes de notification et serveurs fournis par des tiers ;</li>
 <li> </li>
-<li>Votre Application ne doit envoyer aucune notification push sans avoir préalablement obtenu le consentement de l'utilisateur (par exemple, messages non sollicités, publicités, promotions ou marketing direct de quelque nature que ce soit, ou à des fins d'hameçonnage et de spam) ;</li>
+<li>Votre Application ne doit envoyer aucune notification push sans avoir préalablement obtenu le consentement de l'utilisateur (par exemple, messages non sollicités, publicité, promotions ou marketing direct de quelque nature que ce soit, ou à des fins de phishing et de spam) ;</li>
 <li> </li>
-<li>Votre application ne devra envoyer aucun message à des fins d'hameçonnage ou de spam, ni permettre des appels téléphoniques ou des messages SMS/MMS anonymes ou malveillants.</li>
+<li>Votre Application ne doit envoyer aucun message à des fins de phishing ou de spam, ni permettre des appels téléphoniques anonymes ou des canulars, ni des envois de SMS/MMS.</li>
 </ol>
 <h4>8. Propriété et droits de propriété intellectuelle</h4>
-<p>Le Logiciel et tous les droits y afférents, sans limitation, y compris le titre et les droits de propriété intellectuelle, appartiennent à Withings et/ou à ses donneurs de licence et affiliés et sont protégés par les dispositions des traités internationaux et par toutes les autres lois nationales applicables du pays dans lequel il est utilisé. La structure, l'organisation et le code du Logiciel constituent des secrets commerciaux précieux et des informations confidentielles de Withings et/ou de ses donneurs de licence et affiliés.</p>
-<p>Aucun droit ni licence, exprès ou implicite, n'est accordé à quelque partie que ce soit du Logiciel, sauf tel qu'expressément stipulé ci-dessus. En outre, aucune licence ni immunité n'est accordée pour la combinaison du Logiciel avec tout autre logiciel ou matériel non fourni par Withings dans le cadre du présent Accord. De même, toutes les licences relatives aux brevets de Withings ou de tiers (y compris les brevets essentiels) sont expressément exclues du champ d'application du présent Accord, et ces licences doivent être obtenues séparément auprès de Withings ou des titulaires de droits concernés, selon le cas.</p>
-<p>Vous et vos affiliés, selon le cas, vous engagez à ne pas introduire de recours devant quelque tribunal ou autorité administrative que ce soit, ni à formuler toute réclamation à l'encontre de Withings ou de l'un de ses affiliés, fournisseurs, licenciés ou clients, fondée sur l'un de vos brevets ou sur ceux de vos affiliés, en raison de la reproduction, du développement, de l'utilisation, de la fabrication, de la commercialisation, de la vente, de la distribution, de l'octroi de licences, de l'importation, de la sous-licence ou de toute autre cession du Logiciel ou de ses implémentations.</p>
-<p>Vous et Vos affiliés vous engagez à imposer l'obligation stipulée dans la clause ci-dessus à tout tiers auquel Vous ou Vos affiliés pourriez céder ou transférer Vos brevets. Cette obligation est limitée aux actions en justice ou autres revendications fondées sur ces brevets cédés ou transférés.</p>
-<p>Vous serez libéré de votre engagement de ne pas poursuivre en justice au titre de la présente section à l'égard d'un bénéficiaire particulier (mais non à l'égard de tout autre bénéficiaire) dans le cas suivant : (i) vous êtes d'abord poursuivi pour contrefaçon de brevet en lien avec le Logiciel par cet autre bénéficiaire qui bénéficie de votre engagement tel que stipulé aux présentes ; et (ii) la poursuite est fondée sur votre violation des droits de brevet de cet autre bénéficiaire qui, s'ils étaient détenus par vous, seraient soumis à l'engagement de ne pas poursuivre prévu ci-dessus dans la présente section.</p>
-<p>Aux fins de la présente section, le terme brevet désigne tout brevet, modèle d'utilité ainsi que tout divisionnaire, réexamen, réémission, continuation et continuation en partie de ceux-ci, ainsi que toute demande correspondante à l'échelle mondiale.</p>
+<p>Le Logiciel et tous les droits, y compris sans limitation le titre de propriété et les droits de propriété intellectuelle y afférents, appartiennent à Withings et/ou à ses concédants de licence et affiliés et sont protégés par les dispositions des traités internationaux et par toutes les autres lois nationales applicables du pays dans lequel il est utilisé. La structure, l'organisation et le code du Logiciel constituent des secrets commerciaux précieux et des informations confidentielles de Withings et/ou de ses concédants de licence et affiliés.</p>
+<p>Aucun droit ou licence, explicite ou implicite, n'est accordé sur quelque partie que ce soit du Logiciel, sauf tel qu'expressément stipulé ci-dessus. De plus, aucune licence ni immunité n'est accordée pour la combinaison du Logiciel avec tout autre logiciel ou matériel non fourni par Withings dans le cadre du présent Accord. Par ailleurs, toutes les licences relatives aux brevets de Withings ou de tiers (y compris les brevets essentiels) sont expressément exclues du champ d'application du présent Accord, et ces licences doivent être acquises séparément auprès de Withings ou des titulaires de droits concernés, selon le cas.</p>
+<p>Vous et vos affiliés, le cas échéant, vous engagez à ne pas intenter d'action devant un tribunal ou une autorité administrative, ni à formuler toute réclamation à l'encontre de Withings ou de l'un de ses affiliés, fournisseurs, preneurs de licence ou clients, sur la base de l'un quelconque de vos brevets ou de ceux de vos affiliés, en raison de la reproduction, du développement, de l'utilisation, de la fabrication, de la commercialisation, de la vente, de la distribution, de la concession de licence, de l'importation, de la sous-licence ou de toute autre disposition du Logiciel ou de ses implémentations.</p>
+<p>Vous et vos affiliés devez imposer l'obligation énoncée dans la clause ci-dessus à tout tiers auquel vous ou vos affiliés pourriez céder ou transférer vos brevets. Cette obligation est limitée aux poursuites ou autres assertions fondées sur ces brevets cédés ou transférés.</p>
+<p>Vous serez libéré de votre engagement et accord de non-poursuite prévu à la présente section à l'égard d'un bénéficiaire particulier (mais non à l'égard de tout autre bénéficiaire) dans le cas suivant : (i) vous êtes d'abord poursuivi pour contrefaçon de brevet en lien avec le Logiciel par cet autre bénéficiaire qui profite de votre engagement et accord tel qu'énoncé aux présentes ; et (ii) la poursuite est fondée sur votre violation des droits de brevet de cet autre bénéficiaire qui, s'ils étaient détenus par vous, seraient soumis à l'engagement et à l'accord de non-poursuite prévu ci-dessus dans la présente section.</p>
+<p>Aux fins de la présente section, le terme « brevet » désigne tout brevet, modèle d'utilité et tout brevet divisionnaire, réexaminé, réémis, de continuation ou de continuation partielle, ainsi que toute demande correspondante à l'échelle mondiale.</p>
 <h4>9. Frais</h4>
-<p>Votre utilisation du Logiciel peut être ou devenir soumise à des frais. Withings se réserve le droit de facturer le Logiciel et de modifier ses tarifs à tout moment, à sa seule discrétion.</p>
+<p>L'utilisation du Logiciel peut être ou devenir soumise à des frais. Withings se réserve le droit de facturer le Logiciel et d'en modifier les tarifs à tout moment, à sa seule discrétion.</p>
 <h4>10. Disponibilité</h4>
-<p>Le Logiciel peut ne pas être disponible dans tous les pays et peut être fourni uniquement dans certaines langues. Le Logiciel ou certaines fonctionnalités peuvent dépendre du réseau ; contactez votre opérateur réseau pour plus d'informations.</p>
+<p>Le Logiciel peut ne pas être disponible dans tous les pays et peut être fourni uniquement dans certaines langues. Le Logiciel ou certaines fonctionnalités peuvent dépendre du réseau ; veuillez contacter votre opérateur réseau pour plus d'informations.</p>
 <h4>11. Support et maintenance</h4>
-<p>Withings n'a aucune obligation de vous fournir un support technique ou autre, sauf accord écrit distinct entre vous et Withings. Dans le cas d'un tel support fourni par Withings, vous reconnaissez et acceptez que ce support a été fourni "en l'état" et "selon disponibilité", et que Withings n'aura aucune obligation ni responsabilité en lien avec ce support.</p>
-<h4>12. Retours et commentaires</h4>
-<p>En soumettant des commentaires ("Commentaires") à Withings concernant le Logiciel, vous reconnaissez et acceptez que (1) Withings puisse avoir des idées de développement similaires aux Commentaires ; (2) vos Commentaires ne contiennent pas d'informations confidentielles ou exclusives relatives à vos propres activités ou à celles de tout tiers ; (3) Withings n'est soumis à aucune obligation de confidentialité à l'égard des Commentaires ; et (4) vous n'avez droit à aucune compensation de quelque nature que ce soit de la part de Withings. Vous accordez par la présente à Withings une licence mondiale, non exclusive, sous-licenciable, cessible, entièrement payée, libre de redevances, perpétuelle et irrévocable pour utiliser, reproduire, adapter, traduire, exploiter, copier, représenter publiquement, afficher, distribuer et commercialiser de toute autre manière les Commentaires.</p>
+<p>Withings n'a aucune obligation de vous fournir un support technique ou autre, sauf accord écrit distinct entre vous et Withings. En cas de support fourni par Withings, vous reconnaissez et acceptez que ce support est fourni "en l'état" et "selon disponibilité", et que Withings n'assume aucune obligation ni responsabilité liée à ce support.</p>
+<h4>12. Retours</h4>
+<p>En soumettant des commentaires ("Commentaires") à Withings en lien avec le Logiciel, vous reconnaissez et acceptez que (1) Withings peut avoir des idées de développement similaires aux Commentaires ; (2) vos Commentaires ne contiennent pas d'informations confidentielles ou exclusives relatives à vos propres activités ou à celles de tiers ; (3) Withings n'est soumis à aucune obligation de confidentialité concernant les Commentaires ; et (4) vous n'avez droit à aucune compensation de quelque nature que ce soit de la part de Withings. Vous accordez par les présentes à Withings une licence mondiale, non exclusive, sous-licenciable, cessible, entièrement acquittée, libre de redevances, perpétuelle et irrévocable pour utiliser, reproduire, adapter, traduire, exploiter, copier, représenter publiquement, afficher, distribuer et commercialiser de toute autre manière les Commentaires.</p>
 <h4>13. Confidentialité</h4>
-<p>Vous acceptez en outre que, nonobstant tout autre accord de confidentialité que vous pourriez avoir conclu avec Withings, Withings ne sera pas tenu de préserver la confidentialité des informations que vous lui communiquez via l'utilisation du Logiciel ou de tout service associé. Ni Withings ni aucun de ses employés n'accepte ou ne prend en considération des idées non sollicitées, incluant notamment des idées pour de nouvelles campagnes publicitaires, nouvelles promotions, nouveaux produits ou technologies, procédés, matériaux, plans marketing ou nouveaux noms de produits. Si, malgré la demande de ne pas nous envoyer vos idées et documents, vous les envoyez quand même, veuillez comprendre que Withings ne garantit pas que vos idées et documents seront traités comme confidentiels ou exclusifs.</p>
-<p>Les droits et obligations du présent article resteront en vigueur pendant cinq (5) ans à compter de la date de divulgation des informations confidentielles.</p>
+<p>Vous acceptez en outre que, nonobstant tout autre accord de confidentialité que vous pourriez avoir avec Withings, Withings ne sera pas responsable de la confidentialité des informations que vous lui communiquez via l'utilisation du Logiciel ou de tout service associé. Ni Withings ni aucun de ses employés n'accepte ou n'examine des idées non sollicitées, y compris, sans s'y limiter, des idées pour de nouvelles campagnes publicitaires, de nouvelles promotions, de nouveaux produits ou technologies, des procédés, des matériaux, des plans marketing ou de nouveaux noms de produits. Si, malgré la demande de ne pas nous envoyer vos idées et documents, vous les envoyez quand même, veuillez comprendre que Withings ne garantit pas que vos idées et documents seront traités comme confidentiels ou exclusifs.</p>
+<p>Les droits et obligations de la présente section resteront en vigueur pendant cinq (5) ans à compter de la date de divulgation des Informations Confidentielles.</p>
 <h4>14. Absence de garanties</h4>
-<p>Vous reconnaissez que le Logiciel est fourni "tel quel" sans garantie d'aucune sorte, expresse ou implicite, et que dans la mesure maximale autorisée par la loi applicable, ni Withings, ni ses donneurs de licence ou affiliés, ni les titulaires de droits d'auteur ne font aucune déclaration ni ne donnent aucune garantie, expresse ou implicite, notamment quant à la qualité marchande, l'exactitude de la documentation et des supports d'assistance, ou l'adéquation à un usage particulier, ni que le Logiciel ne portera pas atteinte aux brevets, droits d'auteur, marques commerciales ou autres droits de tiers. Ni Withings ni aucune autre partie ne garantit que les fonctions contenues dans le Logiciel répondront à vos exigences ou que le fonctionnement du Logiciel sera ininterrompu ou exempt d'erreurs. Vous assumez l'entière responsabilité et le risque lié au choix du Logiciel pour atteindre les résultats escomptés, ainsi qu'à son installation, son utilisation et les résultats obtenus.</p>
+<p>Vous reconnaissez que le Logiciel est fourni "en l'état", sans garantie d'aucune sorte, expresse ou implicite, et que, dans la limite maximale permise par la loi applicable, ni Withings, ni ses concédants de licence ou affiliés, ni les titulaires de droits d'auteur ne font de déclarations ou de garanties, expresses ou implicites, y compris, sans s'y limiter, les garanties de qualité marchande, d'exactitude de la documentation et des supports, ou d'adéquation à un usage particulier, ni que le Logiciel ne violera pas les brevets, droits d'auteur, marques déposées ou autres droits de tiers. Withings ni aucune autre partie ne garantit que les fonctions contenues dans le Logiciel répondront à vos exigences ou que le fonctionnement du Logiciel sera ininterrompu ou exempt d'erreurs. Vous assumez l'entière responsabilité et les risques liés au choix du Logiciel pour atteindre les résultats escomptés, ainsi qu'à son installation, son utilisation et les résultats obtenus.</p>
 <h4>15. Indemnisation</h4>
-<p>Vous acceptez de défendre et d'indemniser Withings contre toutes les réclamations de tiers et toutes les responsabilités, évaluations, pertes, coûts ou dommages résultant de ou découlant de (i) votre violation du présent Accord, (ii) votre atteinte ou violation de tout droit de propriété intellectuelle, autre droit ou vie privée d'un tiers, et (iii) l'utilisation abusive du Logiciel par un tiers, lorsque cette utilisation abusive a été rendue possible par votre manquement à prendre des mesures raisonnables pour protéger votre nom d'utilisateur et votre mot de passe contre toute utilisation abusive.</p>
+<p>Vous acceptez de défendre et d'indemniser Withings contre toute réclamation de tiers et toutes les responsabilités, évaluations, pertes, coûts ou dommages résultant ou découlant de (i) votre violation du présent Accord, (ii) votre atteinte ou violation de tout droit de propriété intellectuelle, autre droit ou vie privée d'un tiers, et (iii) l'utilisation abusive du Logiciel par un tiers, lorsque cette utilisation abusive a été rendue possible par votre défaut de prendre des mesures raisonnables pour protéger votre nom d'utilisateur et votre mot de passe contre toute utilisation abusive.</p>
 <h4>16. Limitation de responsabilité</h4>
-<p>Dans la mesure maximale autorisée par la loi applicable, en aucun cas Withings, ses employés, donneurs de licence ou affiliés ne pourront être tenus responsables de toute perte de bénéfices, de revenus, de ventes, de données, ou de coûts d'acquisition de biens ou logiciels de substitution, de dommages matériels, de préjudices corporels, d'interruption d'activité, de perte d'informations commerciales, ni de tout dommage spécial, direct, indirect, accessoire, économique, punitif ou consécutif, quelle qu'en soit la cause et qu'il résulte d'un contrat, d'un délit, d'une négligence ou de toute autre théorie de responsabilité, découlant de l'utilisation ou de l'impossibilité d'utiliser le logiciel ou le Logiciel, même si Withings ou ses donneurs de licence ou affiliés ont été informés de la possibilité de tels dommages. Étant donné que certains pays/États/juridictions n'autorisent pas l'exclusion de responsabilité, mais peuvent permettre une limitation de responsabilité, dans de tels cas, la responsabilité de Withings, de ses employés, donneurs de licence ou affiliés sera limitée à 50 USD. Aucune disposition du présent Accord ne portera atteinte aux droits légaux de toute partie agissant en qualité de consommateur. Aucune disposition du présent Accord ne limite la responsabilité de Withings envers vous en cas de décès ou de préjudice corporel résultant de la négligence de Withings. Withings agit au nom de ses employés, donneurs de licence ou affiliés aux fins de l'exclusion, de la limitation et/ou de la restriction des obligations, garanties et responsabilités prévues par le présent Accord, mais à aucune autre fin et pour aucun autre objet.</p>
+<p>Dans la limite maximale permise par la loi applicable, en aucun cas Withings, ses employés, concédants de licence ou affiliés ne pourront être tenus responsables de toute perte de bénéfices, de revenus, de ventes, de données, ou de coûts d'acquisition de biens ou de logiciels de substitution, de dommages matériels, de préjudices corporels, d'interruption d'activité, de perte d'informations commerciales, ni de tout dommage spécial, direct, indirect, accessoire, économique, punitif ou consécutif, quelle qu'en soit la cause et qu'il découle d'un contrat, d'un délit, d'une négligence ou de toute autre théorie de responsabilité liée à l'utilisation ou à l'impossibilité d'utiliser le logiciel ou le Logiciel, même si Withings, ses concédants de licence ou affiliés ont été avisés de la possibilité de tels dommages. Étant donné que certains pays/États/juridictions n'autorisent pas l'exclusion de responsabilité, mais peuvent permettre une limitation de celle-ci, dans ces cas, la responsabilité de Withings, de ses employés, concédants de licence ou affiliés sera limitée à 50 USD. Aucune disposition du présent Accord ne portera atteinte aux droits légaux de toute partie agissant en tant que consommateur. Aucune disposition du présent Accord ne limite la responsabilité de Withings envers vous en cas de décès ou de préjudice corporel résultant de la négligence de Withings. Withings agit au nom de ses employés et concédants de licence ou affiliés aux fins de décliner, d'exclure et/ou de limiter les obligations, garanties et responsabilités telles que prévues dans le présent Accord, mais à aucune autre fin et pour aucun autre objet.</p>
 <h4>17. Contrôle des exportations</h4>
-<p>Vous reconnaissez que le Logiciel peut être soumis aux réglementations de contrôle des exportations de divers pays. Vous vous conformerez pleinement à toutes les restrictions et exigences applicables en matière de licences d'exportation, ainsi qu'à toutes les lois et réglementations relatives à l'importation du Logiciel et/ou des Applications, et vous obtiendrez toutes les autorisations gouvernementales nécessaires, y compris, sans s'y limiter, toutes les licences, approbations, permissions ou consentements nécessaires, le cas échéant, pour la réexportation du Logiciel ou des Applications.</p>
+<p>Vous reconnaissez que le Logiciel peut être soumis aux réglementations en matière de contrôle des exportations de divers pays. Vous devez vous conformer pleinement à toutes les restrictions et exigences applicables en matière de licences d'exportation, ainsi qu'à toutes les lois et réglementations relatives à l'importation du Logiciel et/ou des Applications, et vous devez obtenir toutes les autorisations gouvernementales nécessaires, y compris, sans s'y limiter, toutes les licences, approbations, autorisations ou consentements nécessaires, lorsque cela est requis pour la réexportation du Logiciel ou des Applications.</p>
 <h4>18. Utilisateurs finaux gouvernementaux</h4>
-<p>Un "Utilisateur final du gouvernement américain" désigne tout organisme ou entité du gouvernement des États-Unis. Les dispositions suivantes s'appliquent si vous êtes un Utilisateur final du gouvernement américain. Le Logiciel est un "article commercial," tel que ce terme est défini au 48 C.F.R. 2.101 (oct. 1995), comprenant un "logiciel informatique commercial" et une "documentation de logiciel informatique commercial," tels que ces termes sont utilisés au 48 C.F.R. 12.212 (sept. 1995). Conformément aux 48 C.F.R. 12.212 et 48 C.F.R. 227.7202-1 à 227.7202-4 (juin 1995), tous les Utilisateurs finaux du gouvernement américain acquièrent le Logiciel avec uniquement les droits énoncés aux présentes. Le Logiciel (y compris la documentation associée) est fourni aux Utilisateurs finaux du gouvernement américain : (a) uniquement en tant qu'article commercial destiné à l'utilisateur final ; et (b) uniquement conformément au présent Accord.</p>
+<p>Un "Utilisateur final du gouvernement américain" désigne tout organisme ou entité du gouvernement des États-Unis. Les dispositions suivantes s'appliquent si vous êtes un Utilisateur final du gouvernement américain. Le Logiciel est un "article commercial," au sens défini dans 48 C.F.R. 2.101 (oct. 1995), composé d'un "logiciel informatique commercial" et d'une "documentation de logiciel informatique commercial," tels que ces termes sont utilisés dans 48 C.F.R. 12.212 (sept. 1995). Conformément aux dispositions 48 C.F.R. 12.212 et 48 C.F.R. 227.7202-1 à 227.7202-4 (juin 1995), tous les Utilisateurs finals du gouvernement américain acquièrent le Logiciel uniquement avec les droits énoncés aux présentes. Le Logiciel (y compris la documentation associée) est fourni aux Utilisateurs finals du gouvernement américain : (a) uniquement en tant qu'article commercial final ; et (b) uniquement conformément au présent Accord.</p>
 <h4>19. Dispositions diverses</h4>
 <p><strong>19.1 Notifications.</strong> Toutes les notifications relatives au Logiciel doivent être adressées à :</p>
 <p>Withings SA<br>2 rue Maurice Hartmann<br>92130 Issy-les-Moulineaux<br>France</p>
-<p><strong>19.2 Cession.</strong> Vous n'êtes pas autorisé à céder ou transférer tout ou partie de vos droits, avantages et obligations au titre du présent Accord sans le consentement écrit préalable de Withings, lequel ne pourra être refusé de manière déraisonnable. Withings est autorisé à céder ou transférer tout ou partie de ses droits, avantages ou obligations au titre du présent Accord sans restriction.</p>
-<p><strong>19.3 Divisibilité.</strong> Si une partie du présent Accord est déclarée nulle et non exécutoire, cela n'affectera pas la validité du reste de l'Accord, qui demeurera valide et exécutoire conformément à ses termes.</p>
-<p><strong>19.4 Confidentialité.</strong> La Politique de confidentialité de Withings et tout supplément de confidentialité applicable régissent l'utilisation de Vos données personnelles.</p>
-<p><strong>19.5 Droit applicable et règlement des litiges.</strong> Les présentes Conditions Générales Withings sont régies par le droit français. Dans l'éventualité où un litige surgirait à l'occasion ou en lien avec votre utilisation des Produits et Services fournis par Withings, les Parties s'engagent à rechercher une solution amiable avant toute action en justice. En cas de litige, seuls les tribunaux français seront compétents.</p>
-<p>Si, malgré tous nos efforts pour répondre à vos attentes, vous n'obtenez pas satisfaction après avoir contacté notre service client, vous pouvez recourir gratuitement à un médiateur de la consommation. Le Centre de Médiation et d'Arbitrage de Paris vous accompagnera dans vos démarches si vous le contactez : (i) via leur formulaire en ligne (www.cmap.fr), (ii) par e-mail à consommation@cmap.fr, ou (iii) par courrier ordinaire ou recommandé à l'adresse CMAP Médiation Consommation, 39 avenue Franklin D. Roosevelt, 75008 PARIS.</p>
-<p><strong>19.6 Intégralité de l'accord.</strong> Le présent document constitue l'intégralité de l'accord entre Withings et Vous concernant le Logiciel, et remplace toute représentation, discussion, engagement, accord d'utilisateur final, communication ou publicité antérieurs relatifs au Logiciel.</p>
-<h3>Conditions supplémentaires – Conditions supplémentaires de l'API Withings pour la santé numérique</h3>
-<p>En complément des conditions énoncées ci-dessus, la Politique de confidentialité de Withings et les conditions supplémentaires suivantes s'appliquent à votre utilisation des API Withings et des services associés ("Service").</p>
+<p><strong>19.2 Cession.</strong> Vous n'êtes pas autorisé à céder ou transférer tout ou partie de vos droits, avantages et obligations au titre du présent Accord sans le consentement écrit préalable de Withings, lequel ne pourra pas être refusé de manière déraisonnable. Withings est autorisé à céder ou transférer tout ou partie de ses droits, avantages ou obligations au titre du présent Accord sans restriction.</p>
+<p><strong>19.3 Divisibilité.</strong> Si une partie du présent Accord est déclarée nulle et non avenue, cela n'affectera pas la validité du reste de l'Accord, qui demeurera valide et exécutoire conformément à ses termes.</p>
+<p><strong>19.4 Confidentialité.</strong> La politique de confidentialité de Withings et tout supplément de confidentialité applicable régissent l'utilisation de vos données personnelles.</p>
+<p><strong>19.5 Droit applicable et résolution des litiges.</strong> Les présentes Conditions générales Withings sont régies par le droit français. En cas de litige découlant de ou lié à votre utilisation de tout Produit et Service fourni par Withings, les Parties s'engagent à rechercher une solution amiable avant toute action en justice. En cas de litige, seuls les tribunaux français seront compétents.</p>
+<p>Si malgré tous nos efforts pour répondre à vos attentes vous n'obtenez pas satisfaction après avoir contacté notre service client, vous pouvez recourir gratuitement à un médiateur de la consommation. Le Centre de Médiation et d'Arbitrage de Paris vous accompagnera dans vos démarches si vous les contactez : (i) via leur formulaire en ligne (www.cmap.fr), (ii) par e-mail à consommation@cmap.fr, ou (iii) par courrier ordinaire ou recommandé au CMAP Médiation Consommation, 39 avenue Franklin D. Roosevelt, 75008 PARIS.</p>
+<p><strong>19.6 Accord intégral.</strong> Le présent Accord constitue l'intégralité de l'accord entre Withings et vous concernant le Logiciel, et remplace toute représentation, discussion, engagement, accord d'utilisation finale, communication ou publicité antérieurs relatifs au Logiciel.</p>
+<h3>Conditions supplémentaires – Conditions Supplémentaires de l'API Withings pour la santé numérique</h3>
+<p>En complément des conditions énoncées ci-dessus, la Politique de confidentialité de Withings ainsi que les conditions supplémentaires suivantes s'appliquent à votre utilisation des API Withings et des services associés ("Service").</p>
 <h4>1. Définitions</h4>
-<p><strong>"Withings API Service"</strong> désigne le service proposé par Withings qui vous permet d'intégrer les API Withings, telles que mises à disposition par Withings de temps à autre, dans Vos Applications et de permettre aux utilisateurs finaux d'y accéder et de les utiliser au sein de ces Applications.</p>
-<p><strong>"Withings API Developer Package"</strong> désigne le logiciel Withings, les API(s) Withings, la documentation et tout autre matériel rendu accessible par Withings à tout moment, permettant d'intégrer les API Withings dans vos Applications et désigné par Withings comme faisant partie du Withings API Developer Package.</p>
-<p><strong>"Withings API(s)"</strong> désigne les informations d'interface rendues accessibles par Withings, de temps à autre, qui vous permettent d'intégrer l'API Withings pour les développeurs dans vos applications.</p>
-<p><strong>"User Content"</strong> désigne les données d'identité et de mesure d'un utilisateur des produits de santé connectés de Withings que celui-ci choisit de partager avec Vous.</p>
-<h4>2. Offre de services, inscription et résiliation</h4>
-<p>Vous vous engagez à fournir des informations véridiques et complètes lors de votre inscription au Service et à maintenir ces informations à jour. Fournir des informations trompeuses sur votre identité est interdit. Vous êtes personnellement responsable de toute utilisation du Service API Withings. Vous vous engagez à prendre les précautions nécessaires pour protéger votre Application utilisant l'API Withings, votre jeton et/ou clé développeur contre toute utilisation abusive par des tiers, et à notifier promptement Withings de toute utilisation abusive. Lorsque Withings le demande, vous acceptez d'inclure et d'utiliser le jeton et/ou la clé développeur, selon le cas, dans chaque requête que vous effectuez pour accéder aux API(s) Withings.</p>
-<p>Vous pouvez mettre fin à votre inscription si vous ne souhaitez plus utiliser le Service. Après résiliation, vous ne pourrez plus accéder au Service.</p>
+<p><strong>"Service API Withings"</strong> désigne le service proposé par Withings qui vous permet d'intégrer les API Withings, telles que mises à disposition par Withings de temps à autre, dans vos Applications et de permettre aux utilisateurs finaux d'y accéder et de les utiliser au sein de ces Applications.</p>
+<p><strong>"Package Développeur de l'API Withings"</strong> désigne le logiciel Withings, les API Withings, la documentation et l'ensemble des autres éléments mis à Votre disposition par Withings de temps à autre, qui Vous permettent d'intégrer les API Withings dans Vos Applications et qui sont désignés par Withings comme faisant partie du Package Développeur de l'API Withings.</p>
+<p><strong>"API(s) Withings"</strong> désigne les informations d'interface mises à votre disposition par Withings de temps à autre, vous permettant d'intégrer l'API Withings pour développeurs dans vos Applications.</p>
+<p><strong>"Contenu utilisateur"</strong> désigne les données d'identité et de mesure de santé qu'un utilisateur des produits de santé connectés de Withings choisit de partager avec vous.</p>
+<h4>2. Offre de service, inscription et résiliation</h4>
+<p>Vous vous engagez à fournir des informations véridiques et complètes lors de votre inscription au Service et à les maintenir à jour. Fournir des informations trompeuses sur votre identité est interdit. Vous êtes personnellement responsable de toute utilisation du Service API Withings. Vous vous engagez à prendre les précautions nécessaires pour protéger votre Application utilisant l'API Withings, votre jeton et/ou votre clé de développeur contre toute utilisation abusive par des tiers, et à notifier promptement Withings de toute utilisation abusive. Lorsque Withings en fait la demande, vous acceptez d'inclure et d'utiliser le jeton et/ou la clé de développeur, selon le cas, dans chaque requête que vous effectuez pour accéder aux API(s) Withings.</p>
+<p>Vous pouvez résilier votre inscription si vous ne souhaitez plus utiliser le Service. Après résiliation, vous ne pourrez plus accéder au Service.</p>
 <h4>3. Modifications</h4>
-<p>Withings peut, à sa seule discrétion, modifier, améliorer et corriger le Service de temps à autre. Withings peut également fournir des mises à jour du Service considérées comme importantes ou critiques par Withings, auquel cas vous ne pourrez pas continuer à utiliser la version précédente du Service et l'utilisation de cette version précédente pourra être bloquée tant que la mise à jour n'aura pas été installée. Le Service peut ne pas être disponible lors des interruptions de maintenance et à d'autres moments. Withings peut également décider d'interrompre le Service ou toute partie de celui-ci à sa seule discrétion. Dans ce cas, vous serez informé au préalable et Withings pourra résilier le Contrat en conséquence.</p>
-<p>Sauf disposition contraire de la Politique de confidentialité, Withings ne sera pas responsable de la suppression ou de la perte des informations ou contenus que Vous avez soumis ("Matériel") au Service lors de la résiliation de Votre inscription. Après la suppression du Matériel du Service, que ce soit par Vous ou par Withings, des traces et des copies du Matériel peuvent subsister.</p>
-<p>Withings se réserve le droit de modifier ou d'amender les présentes conditions générales à tout moment et sans préavis. Si les conditions sont modifiées de manière substantielle et défavorable, Withings fournira un avis séparé informant de ce changement. Afin de continuer à utiliser le Service, Vous devez accepter les nouvelles conditions générales. Si Vous n'acceptez pas les nouvelles conditions, Votre utilisation du Service sera suspendue ou résiliée par Withings.</p>
-<h4>4. Utilisation du Package développeur API Withings</h4>
-<p>Le Package Développeur de l'API Withings vous est rendu accessible aux fins d'intégration des API Withings dans Votre Application et aux fins limitées d'évaluation, de test et de contrôle de Votre Application.</p>
-<p>Lors de l'utilisation du Package développeur API Withings et/ou du Service, sauf accord écrit contraire avec Withings, vous vous engagez par les présentes à ne pas :</p>
+<p>Withings peut, à sa seule discrétion, modifier, améliorer et corriger le Service de temps à autre. Withings peut également fournir des mises à jour du Service considérées comme importantes ou critiques par Withings, auquel cas vous ne pourrez pas continuer à utiliser la version précédente du Service et l'utilisation de cette version pourra être bloquée sans installation de la mise à jour. Le Service peut ne pas être disponible pendant les fenêtres de maintenance et à d'autres moments. Withings peut également décider d'arrêter le Service ou toute partie de celui-ci, à sa seule discrétion. Dans ce cas, vous recevrez une notification préalable et Withings pourra résilier l'Accord en conséquence.</p>
+<p>Sauf disposition contraire de la Politique de confidentialité, Withings ne sera pas responsable de la suppression ou de la perte des informations ou contenus que vous avez soumis ("Matériel") au Service lors de la résiliation de votre inscription. Une fois le Matériel retiré du Service, que ce soit par vous ou par Withings, des traces et des copies de ce Matériel peuvent subsister.</p>
+<p>Withings se réserve le droit de modifier ou d'amender les présentes conditions générales à tout moment et sans préavis. Si les conditions sont modifiées de manière substantielle et défavorable, Withings en informera séparément par un avis préalable. Pour continuer à utiliser le Service, vous devez accepter et approuver les nouvelles conditions générales. Si vous n'acceptez pas les nouvelles conditions, votre utilisation du Service sera suspendue ou résiliée par Withings.</p>
+<h4>4. Utilisation du package développeur API Withings</h4>
+<p>Le package développeur API Withings est mis à votre disposition aux fins d'intégration des API Withings dans votre Application et aux fins limitées d'évaluation, de test et de contrôle de votre Application.</p>
+<p>Lors de l'utilisation du Package Développeur API Withings et/ou du Service, sauf accord écrit contraire avec Withings, Vous acceptez par la présente de ne pas :</p>
 <ol>
 <li> </li>
-<li>utiliser ou incorporer, sans l'autorisation écrite préalable de Withings, le Service, le Package Développeur de l'API Withings ou toute partie de celui-ci, en lien avec toute Application ou autre service (a) dont la fonctionnalité est substantiellement similaire à l'application Withings Mate distribuée par Withings ou ses affiliés ; ou (b) dont l'objet principal est la capture ou la collecte de User Content sans fournir à l'utilisateur de fonctionnalité supplémentaire ;</li>
+<li>utiliser ou intégrer, sans l'autorisation écrite préalable de Withings, le Service, le Package Développeur de l'API Withings ou toute partie de celui-ci, en lien avec toute Application ou autre service (a) dont les fonctionnalités sont substantiellement similaires à celles de l'application Withings Mate distribuée par Withings ou ses affiliés ; ou (b) dont la finalité principale est de capturer ou de collecter du Contenu Utilisateur sans fournir à l'utilisateur de fonctionnalités supplémentaires ;</li>
 <li> </li>
-<li>collecter du User Content sans le consentement préalable et explicite de l'utilisateur ;</li>
+<li>collecter le Contenu utilisateur sans le consentement préalable exprès de l'utilisateur ;</li>
 <li> </li>
-<li>supprimer, masquer, modifier ou omettre tout avis de droit d'auteur ou de marque commerciale, ou tout autre avis, mention, légende similaire ou exigence de marque figurant dans le Package Développeur de l'API Withings, que ces avis, mentions, légendes ou exigences de marque proviennent de Withings ou d'un tiers ;</li>
+<li>supprimer, masquer, modifier ou omettre toute mention de droit d'auteur ou de marque commerciale, ou toute autre mention, marquage, légende ou exigence d'identification similaire du Package Développeur de l'API Withings, que ces mentions, marquages, légendes ou exigences d'identification proviennent de Withings ou d'un tiers ;</li>
 <li> </li>
-<li>accéder au Service ou l'utiliser par tout moyen technologique autre que ceux fournis par le Service ou les API Withings, ou par tout autre moyen explicitement autorisé que Withings pourrait désigner ;</li>
+<li>accéder au Service ou l'utiliser par tout moyen ou technologie autre que ceux fournis par le Service ou les API(s) Withings, ou par d'autres moyens explicitement autorisés que Withings pourrait désigner ;</li>
 <li> </li>
-<li>utiliser le Package Développeur de l'API Withings ou le Service de quelque manière ou à quelque fin que ce soit en violation du présent Accord ou de toute loi ou réglementation applicable, y compris, sans s'y limiter, tout droit de propriété intellectuelle ou autre droit de propriété, tout droit d'une personne, les droits à la vie privée ou les droits de la personnalité ;</li>
+<li>utiliser le package développeur API Withings ou le Service de quelque manière ou à quelque fin que ce soit en violation du présent Accord, de toute loi ou réglementation, y compris, sans s'y limiter, tout droit de propriété intellectuelle ou autre droit exclusif, tout droit d'une personne, les droits à la vie privée ou les droits de la personnalité ;</li>
 <li> </li>
-<li>utiliser la/les API Withings pour émettre des requêtes qui ne sont pas en réponse à des actions d'utilisateurs finaux.</li>
+<li>utiliser les API(s) Withings pour émettre des requêtes qui ne sont pas en réponse à des actions d'utilisateurs finaux.</li>
 </ol>
-<p>Vous vous engagez également (i) à respecter les présentes conditions, les lois applicables et les bonnes pratiques ; (ii) à ne pas distribuer ou publier de spam, de fichiers d'une taille déraisonnable, de chaînes de lettres, de systèmes pyramidaux, de virus ou toute autre technologie susceptible de nuire au Service ou aux intérêts ou biens des utilisateurs du Service ; (iii) à ne pas utiliser le Service en lien avec tout Matériel illicite, offensant, abusif, pornographique, harcelant, diffamatoire ou autrement inapproprié et à vous conformer aux directives d'utilisation de Withings telles que Withings peut les fournir de temps à autre ; et (iv) à respecter la vie privée d'autrui. Vous vous engagez à respecter les directives techniques de Withings et toutes autres directives que Withings peut fournir de temps à autre.</p>
+<p>Vous acceptez également (i) de respecter les présentes conditions, les lois applicables et les bonnes pratiques ; (ii) de ne pas distribuer ou publier de courriers indésirables, de fichiers excessivement volumineux, de chaînes de lettres, de systèmes pyramidaux, de virus ou toute autre technologie susceptible de nuire au Service ou aux intérêts ou aux biens des utilisateurs du Service ; (iii) de ne pas utiliser le Service en lien avec tout Matériel illégal, offensant, abusif, pornographique, harcelant, diffamatoire ou autrement inapproprié, et de respecter les directives d'utilisation de Withings telles que Withings pourrait les fournir de temps à autre ; et (iv) de respecter la vie privée d'autrui. Vous acceptez de vous conformer aux directives techniques de Withings et à toute autre directive que Withings pourrait fournir de temps à autre.</p>
 <h4>5. Confidentialité</h4>
-<p>Vous vous engagez à ce que Votre utilisation des Services et de l'API Withings soit conforme à la Politique de confidentialité de Withings (http://www.withings.com/en_int/privacy) et au supplément de confidentialité Withings applicable.</p>
-<p>Si Votre Application vous permet, à Vous ou à toute autre partie, d'accéder à des informations sur les utilisateurs, y compris, sans s'y limiter, des informations personnellement identifiables ou des informations d'utilisation non personnellement identifiables ("Informations"), Vous devez informer les utilisateurs des Informations accessibles et de la manière dont ces Informations seront utilisées ou divulguées, afin qu'ils puissent prendre des décisions éclairées quant à l'utilisation ou non de Votre Application. Vous devez obtenir le consentement de l'utilisateur pour toute Information et/ou User Content que vous pourriez collecter et utiliser. En outre, vous devez rendre publiquement disponible Votre politique de confidentialité relative à l'utilisation des Informations.</p>
+<p>Vous acceptez que votre utilisation des Services et de l'API Withings soit conforme à la politique de confidentialité de Withings (http://www.withings.com/en_int/privacy) et au supplément de confidentialité Withings applicable.</p>
+<p>Si votre Application vous permet, ou permet à toute partie, d'accéder à des informations concernant les utilisateurs, y compris, sans s'y limiter, des informations personnellement identifiables ou des informations d'utilisation non personnellement identifiables ("Informations"), vous devez informer les utilisateurs des Informations accessibles et de la manière dont ces Informations seront utilisées ou divulguées, afin qu'ils puissent prendre des décisions éclairées quant à l'utilisation ou non de votre Application. Vous devez obtenir le consentement de l'utilisateur pour toute Information et/ou Contenu utilisateur que vous pourriez collecter et utiliser. En outre, vous devez rendre votre politique de confidentialité concernant l'utilisation des Informations accessible au public.</p>
 <h4>6. Disponibilité</h4>
 <p>Le Service peut ne pas être disponible dans tous les pays et peut être fourni uniquement dans certaines langues.</p>
-<h4>7. Vos services</h4>
-<p>Vous pouvez interagir avec des utilisateurs, y compris des consommateurs, sur ou via le Service. Vous reconnaissez que de telles interactions de Votre part n'impliquent pas Withings et se déroulent exclusivement entre Vous et le(s) autre(s) utilisateur(s).</p>
+<h4>7. Vos Services</h4>
+<p>Vous pouvez interagir avec des utilisateurs, y compris des consommateurs, sur ou via le Service. Vous acceptez que de telles interactions de votre part n'impliquent pas Withings et se déroulent exclusivement entre vous et le ou les autres utilisateurs.</p>
 <h4>8. Liens vers des sites et contenus tiers</h4>
-<p>Withings peut inclure des liens vers des sites Internet détenus ou exploités par des tiers et ne faisant pas partie du Service. Lorsque Vous suivez un lien vers un tel site tiers, Vous devez lire et accepter les règles d'utilisation de ce site avant de l'utiliser.</p>
-<p>Vous reconnaissez que Withings n'a aucun contrôle sur le contenu des sites tiers et ne peut assumer aucune responsabilité quant aux services fournis ou aux contenus créés ou publiés par ces sites. Un lien vers un site tiers ne signifie pas que Withings cautionne ce site ni les produits ou services qui y sont référencés.</p>
-<p>En outre, les utilisateurs peuvent créer des liens au sein du Service vers des contenus qui n'ont pas été soumis au Service. Vous reconnaissez que Withings n'est ni responsable ni tenu pour responsable de tels liens.</p>
+<p>Withings peut inclure des liens vers des sites Internet détenus ou exploités par des tiers et ne faisant pas partie du Service. En suivant un lien vers un tel site tiers, vous devez consulter et accepter les règles d'utilisation de ce site avant de l'utiliser.</p>
+<p>Vous reconnaissez que Withings n'a aucun contrôle sur le contenu des sites tiers et ne peut assumer aucune responsabilité pour les services fournis ou les contenus créés ou publiés par ces sites. Un lien vers un site tiers ne signifie pas que Withings approuve ce site ou les produits ou services qui y sont référencés.</p>
+<p>En outre, les utilisateurs peuvent créer des liens au sein du Service vers des contenus qui n'ont pas été soumis au Service. Vous acceptez que Withings ne soit ni responsable ni liable de ces liens.</p>
 <h4>9. Signalement</h4>
 <p>Vous acceptez de mettre en œuvre les mécanismes de signalement spécifiés par Withings (le cas échéant).</p>
 
 <h2>Historique des versions</h2>
-<h3>Conditions générales des services</h3>
+<h3>Conditions générales des Services</h3>
 <table>
 <thead>
 <tr>
@@ -4527,9 +4528,9 @@ none;
 <td><a rel="noopener" href="https://media.withings.com/web/legal/legal-pdf/services-terms-and-conditions/eu-fr-services-terms-and-conditions-20170620.pdf" target="_blank">Version du 20 juin 2017</a></td>
 </tr>
 <tr>
-<td>Anglais</td>
+<td>English</td>
 <td>
-<a rel="noopener" href="https://media.withings.com/web/legal/legal-pdf/services-terms-and-conditions/us-en-services-terms-and-conditions-20260105.pdf" target="_blank">Version du 5 janvier 2026</a> <strong>(version en vigueur)</strong>
+<a rel="noopener" href="https://media.withings.com/web/legal/legal-pdf/services-terms-and-conditions/us-en-services-terms-and-conditions-20260105.pdf" target="_blank">Version du 5 janvier 2026</a> <strong>(version actuelle)</strong>
 </td>
 </tr>
 <tr>
@@ -4605,7 +4606,7 @@ none;
 <td><a rel="noopener" href="https://media.withings.com/web/legal/legal-pdf/services-terms-and-conditions/eu-en-services-terms-and-conditions-20170620.pdf" target="_blank">Version du 20 juin 2017</a></td>
 </tr>
 <tr>
-<td>Allemand</td>
+<td>Deutsch</td>
 <td>
 <a rel="noopener" href="https://media.withings.com/web/legal/legal-pdf/services-terms-and-conditions/eu-de-services-terms-and-conditions-20260105.pdf" target="_blank">Version du 5 janvier 2026</a> <strong>(version actuelle)</strong>
 </td>
@@ -4636,7 +4637,7 @@ none;
 </tr>
 </tbody>
 </table>
-<h3>Conditions générales</h3>
+<h3>Conditions Générales</h3>
 <table>
 <thead>
 <tr>
@@ -4652,13 +4653,13 @@ none;
 </td>
 </tr>
 <tr>
-<td>Anglais</td>
+<td>English</td>
 <td>
-<a rel="noopener" href="https://media.withings.com/web/legal/legal-pdf/general-conditions/wo-en-general-conditions-20230126.pdf" target="_blank">Version du 26 janvier 2023</a> <strong>(version en vigueur)</strong>
+<a rel="noopener" href="https://media.withings.com/web/legal/legal-pdf/general-conditions/wo-en-general-conditions-20230126.pdf" target="_blank">Version du 26 janvier 2023</a> <strong>(version actuelle)</strong>
 </td>
 </tr>
 <tr>
-<td>Allemand</td>
+<td>Deutsch</td>
 <td>
 <a rel="noopener" href="https://media.withings.com/web/legal/legal-pdf/general-conditions/wo-de-general-conditions-20230824.pdf" target="_blank">Version du 24 août 2023</a> <strong>(version actuelle)</strong>
 </td>
@@ -4689,9 +4690,9 @@ none;
 <td><a rel="noopener" href="https://media.withings.com/web/legal/legal-pdf/api-terms-of-use/wo-fr-api-terms-of-use-20170727.pdf" target="_blank">Version du 27 juillet 2017</a></td>
 </tr>
 <tr>
-<td>Anglais</td>
+<td>English</td>
 <td>
-<a rel="noopener" href="https://media.withings.com/web/legal/legal-pdf/api-terms-of-use/wo-en-api-terms-of-use-20180912.pdf" target="_blank">Version du 12 septembre 2018</a> <strong>(version en vigueur)</strong>
+<a rel="noopener" href="https://media.withings.com/web/legal/legal-pdf/api-terms-of-use/wo-en-api-terms-of-use-20180912.pdf" target="_blank">Version du 12 septembre 2018</a> <strong>(version actuelle)</strong>
 </td>
 </tr>
 <tr>
@@ -4699,7 +4700,7 @@ none;
 <td><a rel="noopener" href="https://media.withings.com/web/legal/legal-pdf/api-terms-of-use/wo-en-api-terms-of-use-20170727.pdf" target="_blank">Version du 27 juillet 2017</a></td>
 </tr>
 <tr>
-<td>Allemand</td>
+<td>Deutsch</td>
 <td>
 <a rel="noopener" href="https://media.withings.com/web/legal/legal-pdf/api-terms-of-use/wo-de-api-terms-of-use-20230217.pdf" target="_blank">Version du 17 février 2023</a> <strong>(version actuelle)</strong>
 </td>
@@ -4714,7 +4715,7 @@ none;
 </tr>
 </tbody>
 </table>
-<h3>Politique de retours et commentaires</h3>
+<h3>Politique de commentaires</h3>
 <table>
 <thead>
 <tr>
@@ -4738,9 +4739,9 @@ none;
 <td><a rel="noopener" href="https://media.withings.com/web/legal/legal-pdf/feedback-policy/wo-fr-nokia-feedback-policy-20170620.pdf" target="_blank">Version du 20 juin 2017</a></td>
 </tr>
 <tr>
-<td>Anglais</td>
+<td>English</td>
 <td>
-<a rel="noopener" href="https://media.withings.com/web/legal/legal-pdf/feedback-policy/wo-en-withings-feedback-policy-20221130.pdf" target="_blank">Version du 30 novembre 2022</a> <strong>(version en vigueur)</strong>
+<a rel="noopener" href="https://media.withings.com/web/legal/legal-pdf/feedback-policy/wo-en-withings-feedback-policy-20221130.pdf" target="_blank">Version du 30 novembre 2022</a> <strong>(version actuelle)</strong>
 </td>
 </tr>
 <tr>
@@ -4752,7 +4753,7 @@ none;
 <td><a rel="noopener" href="https://media.withings.com/web/legal/legal-pdf/feedback-policy/wo-en-nokia-feedback-policy-20170620.pdf" target="_blank">Version du 20 juin 2017</a></td>
 </tr>
 <tr>
-<td>Allemand</td>
+<td>Deutsch</td>
 <td>
 <a rel="noopener" href="https://media.withings.com/web/legal/legal-pdf/feedback-policy/wo-de-nokia-feedback-policy-20180912.pdf" target="_blank">Version du 12 septembre 2018</a> <strong>(version actuelle)</strong>
 </td>
@@ -4779,9 +4780,9 @@ none;
 </td>
 </tr>
 <tr>
-<td>Anglais</td>
+<td>English</td>
 <td>
-<a rel="noopener" href="https://media.withings.com/web/legal/legal-pdf/forum-conditions/wo-en-forum-conditions-20190123.pdf" target="_blank">Version du 23 janvier 2019</a> <strong>(version en vigueur)</strong>
+<a rel="noopener" href="https://media.withings.com/web/legal/legal-pdf/forum-conditions/wo-en-forum-conditions-20190123.pdf" target="_blank">Version du 23 janvier 2019</a> <strong>(version actuelle)</strong>
 </td>
 </tr>
 </tbody>
@@ -4802,9 +4803,9 @@ none;
 </td>
 </tr>
 <tr>
-<td>Anglais</td>
+<td>English</td>
 <td>
-<a rel="noopener" href="https://media.withings.com/web/legal/legal-pdf/end-of-support-policy/eu-en-end-of-support-policy-20260423.pdf" target="_blank">Version du 23 avril 2026</a> <strong>(version en vigueur)</strong>
+<a rel="noopener" href="https://media.withings.com/web/legal/legal-pdf/end-of-support-policy/eu-en-end-of-support-policy-20260423.pdf" target="_blank">Version du 23 avril 2026</a> <strong>(version actuelle)</strong>
 </td>
 </tr>
 </tbody>
@@ -4819,9 +4820,9 @@ none;
 </thead>
 <tbody>
 <tr>
-<td>Anglais</td>
+<td>English</td>
 <td>
-<a rel="noopener" href="https://media.withings.com/web/legal/legal-pdf/cardio-checkup/wo-en-withings-cardio-checkup-20250102.pdf" target="_blank">Version du 2 janvier 2025</a> <strong>(version en vigueur)</strong>
+<a rel="noopener" href="https://media.withings.com/web/legal/legal-pdf/cardio-checkup/wo-en-withings-cardio-checkup-20250102.pdf" target="_blank">Version du 2 janvier 2025</a> <strong>(version actuelle)</strong>
 </td>
 </tr>
 </tbody>
@@ -4842,9 +4843,9 @@ none;
 </td>
 </tr>
 <tr>
-<td>Anglais</td>
+<td>English</td>
 <td>
-<a rel="noopener" href="https://media.withings.com/web/legal/legal-pdf/withings-plus-protect/eu-en-withings-plus-protect-20260427.pdf" target="_blank">Version du 27 avril 2026</a> <strong>(version en vigueur)</strong>
+<a rel="noopener" href="https://media.withings.com/web/legal/legal-pdf/withings-plus-protect/eu-en-withings-plus-protect-20260427.pdf" target="_blank">Version du 27 avril 2026</a> <strong>(version actuelle)</strong>
 </td>
 </tr>
 </tbody>
@@ -6005,41 +6006,7 @@ none;
 
 
 <style>  </style>
-<div id="shopify-block-AVElYbHJnemxjbVVrN__10840395464443086010" class="shopify-block shopify-app-block">
-
-
-<script>
-  console.log("[Alia app extension] v1.0.5");
-
-  const BACKEND_URL = "https://backend.alia-prod.com";
-
-  window.ALIA_SHOPIFY_EXTENSION_INFO = {
-    customerID: "",
-    country: "FR",
-    market: "fr",
-    language: "fr"
-  }
-
-  if (document.readyState !== "loading") {
-    initAlia();
-  } else {
-    document.addEventListener("DOMContentLoaded", () => initAlia(), { once: true });
-  }
-
-  async function initAlia() {
-    if (window.Shopify.designMode) {
-      console.log("[Alia app extension] Not showing in Shopify theme editor");
-      return;
-    }
-    const url = BACKEND_URL + "/public/launcher.js?shop=0e1fdz-w5.myshopify.com";
-    const script = document.createElement("script");
-    script.src = url;
-    script.async = true;
-    document.head.appendChild(script);
-  }
-</script>
-
-</div><div id="shopify-block-AYlZha3Y3M1ZCdHA1e__15912215999290715800" class="shopify-block shopify-app-block">
+<div id="shopify-block-AYlZha3Y3M1ZCdHA1e__15912215999290715800" class="shopify-block shopify-app-block">
 
 <style data-shopify>
     .md-modal__content, .md-btn, .md-modal__formContent__select select, .md-form__select, .md-form__select__country__list-link, .md-form__select__language__list-link, .md-form__select__country__list-link-wrapper span, .md-form__select__language__list-link-wrapper span, .md-modal__bodyContent__text p {
@@ -9125,6 +9092,40 @@ if (typeof mdApp_countryRules == 'undefined') {var mdApp_countryRules = {
 </script>
 
 
+
+</div><div id="shopify-block-AVElYbHJnemxjbVVrN__10840395464443086010" class="shopify-block shopify-app-block">
+
+
+<script>
+  console.log("[Alia app extension] v1.0.5");
+
+  const BACKEND_URL = "https://backend.alia-prod.com";
+
+  window.ALIA_SHOPIFY_EXTENSION_INFO = {
+    customerID: "",
+    country: "FR",
+    market: "fr",
+    language: "fr"
+  }
+
+  if (document.readyState !== "loading") {
+    initAlia();
+  } else {
+    document.addEventListener("DOMContentLoaded", () => initAlia(), { once: true });
+  }
+
+  async function initAlia() {
+    if (window.Shopify.designMode) {
+      console.log("[Alia app extension] Not showing in Shopify theme editor");
+      return;
+    }
+    const url = BACKEND_URL + "/public/launcher.js?shop=0e1fdz-w5.myshopify.com";
+    const script = document.createElement("script");
+    script.src = url;
+    script.async = true;
+    document.head.appendChild(script);
+  }
+</script>
 
 </div><script src="https://cdn.shopify.com/storefront/standard-actions.js" type="module" data-source-attribution="shopify.standard_actions"></script>
 </body>
