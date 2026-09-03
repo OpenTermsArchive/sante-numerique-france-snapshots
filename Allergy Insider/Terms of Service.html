@@ -338,9 +338,9 @@ var interactClientContext = {
 		data-version="6.46.0" 
 		data-analytics-section="header" 
 		data-aem-syndication-info="(fr:fr-fr:anonymous:https-tf)"
-		data-aem-syndication-timestamp="globalHeader: Thu, 03 Sep 2026 00:26:41 GMT" 
+		data-aem-syndication-timestamp="globalHeader: Thu, 03 Sep 2026 12:15:02 GMT" 
 		data-optional-selectors="inlineCss,noJquery,globalRoute">
-		<!-- ID:  dac7eba2-673f-44d7-b6a4-276b8f843ecc -->
+		<!-- ID:  e931969f-938e-4406-86ef-8b0434043b78 -->
 		<!-- Home metadata: europe/fr/fr/home/content.json -->
 		<!-- Meganav metadata: europe/fr/fr/header/meganav/content.json -->
 		<!-- Focus Areas metadata: all/fr/fr/focusAreas/content.json -->
@@ -1924,6 +1924,31 @@ var utilitybarBase=function(i){return i.$utilityBar=document.getElementById("use
     // CID Param has been set on page load for campaign marketing pages to avoid race condition only for classic pages.
     window.digitalData = window.digitalData || {}; window.digitalData.merchandising = window.digitalData.merchandising || {};
     window.digitalData.merchandising.cid = "";
+    
+    (function () {
+        const STORAGE_KEY = 'originalReferrer';
+
+        try {
+            if (sessionStorage.getItem(STORAGE_KEY)) {
+                return;
+            }
+
+            const referrer = document.referrer;
+
+            if (!referrer) {
+                return;
+            }
+
+            const referrerHost = new URL(referrer).hostname;
+            const currentHost = window.location.hostname;
+
+            if (referrerHost !== currentHost) {
+                sessionStorage.setItem(STORAGE_KEY, referrer);
+            }
+        } catch (e) {
+            console.error('Unable to store original referrer', e);
+        }
+    })();
 </script>
 
 
@@ -2205,9 +2230,9 @@ var utilitybarBase=function(i){return i.$utilityBar=document.getElementById("use
 		data-version="6.46.0" 
 		data-analytics-section="header" 
 		data-aem-syndication-info="(fr:fr-fr:anonymous:https-tf)"
-		data-aem-syndication-timestamp="globalHeader: Thu, 03 Sep 2026 00:26:41 GMT" 
+		data-aem-syndication-timestamp="globalHeader: Thu, 03 Sep 2026 12:15:02 GMT" 
 		data-optional-selectors="inlineCss,noJquery,globalRoute">
-		<!-- ID:  a931c08d-09ed-4386-b0ad-40059c0aace5 -->
+		<!-- ID:  82a2e0e1-142f-4e1e-af0d-cb5cb1f5e8b9 -->
 		<!-- Home metadata: europe/fr/fr/home/content.json -->
 		<!-- Meganav metadata: europe/fr/fr/header/meganav/content.json -->
 		<!-- Focus Areas metadata: all/fr/fr/focusAreas/content.json -->
@@ -2882,6 +2907,6 @@ var utilitybarBase=function(i){return i.$utilityBar=document.getElementById("use
 
         
 
-    <script type="text/javascript"  src="/neBgFU7UpmZPW/AYdRRt/Lt4eaJGw/JfmufX3X/PWEJAg/XWttZ/Dp9IT4Y?v=f92aa882-6243-7217-b80e-d98ffb391733" defer></script></body>
+    <script type="text/javascript"  src="/neBgFU7UpmZPW/AYdRRt/Lt4eaJGw/JfmufX3X/PWEJAg/cwdBc/EhVQFUY?v=4a65a9a9-e16f-97c1-d1ff-dd315c2f0215" defer></script></body>
     
 </html>
